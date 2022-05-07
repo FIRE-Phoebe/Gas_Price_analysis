@@ -1,2 +1,2 @@
-# Gas Price Analysis
+# Price Analysis
 ## Presentation
