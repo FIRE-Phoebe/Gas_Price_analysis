@@ -1,7 +1,7 @@
 # Gas Price Prediction Analysis
 ## Overview of the Analysis
 Our Gas Price Prediction Model will be a very convenient tool for our daily life and also for the business owners who get impacted by gas price to make better decisions.
-We are happy to provide the tool that we created, so people can check the future gas prices and make their lives any helpful!
+We are happy to provide the tool that we created, so people can check the future gas prices and make their life any helpful!
 
 ## Deliverables
 - Presentation
