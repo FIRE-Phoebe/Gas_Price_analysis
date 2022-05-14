@@ -33,7 +33,7 @@ We are happy to provide the tool that we created, so people can check the future
 
 ## DB Diagram
 
-![ERD](Resources/ERD.png)
+![ERD](Images/ERD.png)
 
 ## Results
 
