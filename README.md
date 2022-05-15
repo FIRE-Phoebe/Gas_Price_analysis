@@ -26,6 +26,7 @@ Gas Price Analysis project use Python, ETL, Web Scaping, and Machine Learning Mo
 - U.S._Natural_Gas_Underground_Storage_Volume.csv :
   - https://www.eia.gov/dnav/ng/hist/n5030us2m.htm
 
+
 ### Presentation
 - Topic: Gas Price Prediction and Analysis
 - Reason: After a pandemic, people are planning to going back to work. Drivers bemoan high gasoline prices. Besides, gas price rising impacts not only on daily life and travel, but also on various trades and industries.Through analyzing the historical natural gas datasets from U.S., we provide a platform for people explore more about the changes of natural gas price and use machine learning model to help them predict accurate gas price in the future.  
@@ -45,7 +46,9 @@ Gas Price Analysis project use Python, ETL, Web Scaping, and Machine Learning Mo
     - Premium All Formulations Retail Gasoline Prices
     - No 2 Diesel Retail Prices
   - California Regular All_Formulations Retail Price
- 
+
+![ERD](Resources/Images/ERD.png)
+
 - Questions hope to answer with the data
   - What is the average natural gas price now and future.
   - How the natural gas price changed from the last decades.
