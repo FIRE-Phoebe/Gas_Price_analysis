@@ -24,16 +24,19 @@ Gas Price Analysis project use Python, ETL, Web Scaping, and Machine Learning Mo
   - Premium Conventional Retail Gasoline Prices(P2)
   - Premium Reformulated Retail Gasoline Prices (P3)
   - No 2 Diesel Retail Prices(D1)
-- U.S All_Grades All_Formulations Retail Price(Weekly)
-- California Regular All_Formulations Retail Price(Weekly)
+- U.S All_Grades All_Formulations Retail Price
+- California Regular All_Formulations Retail Price
 
 ### Machine Learning Model Prediction
-#### Supervised Learning
-- Logistic Regression 
+#### Supervised Learning (Analyzing the input data)
+- Logistic Regression (algorithm)
 - Support Vector Machine(SVM)
 - Random Forests Classifier
-#### Advance Machine Learning Model
-- Neuron Network Model
+#### Advance Machine Learning Model (Deep Learning Model, analyze the input data)
+- Neuron Network Model (algorithm)
+#### Analyze the output data(regression, or classification, or clustering)
+- K-means (clustering algorithm)
+
 
 #### Performance of Models
 
