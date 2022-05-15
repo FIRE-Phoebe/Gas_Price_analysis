@@ -19,7 +19,6 @@ Gas Price Analysis project use Python, ETL, Web Scaping, and Machine Learning Mo
     - Midgrade All Formulations Retail Gasoline Prices
     - Premium All Formulations Retail Gasoline Prices
     - No 2 Diesel Retail Prices
-  - U.S All_Grades All_Formulations Retail Price
   - California Regular All_Formulations Retail Price
 - Questions hope to answer with the data
   - What is the average natural gas price now and future.
