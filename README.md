@@ -6,50 +6,36 @@ Gas Price Analysis project use Python, ETL, Web Scaping, and Machine Learning Mo
 - Topic: Gas Price Prediction and Analysis
 - Reason: After a pandemic, people are planning to going back to work. Drivers bemoan high gasoline prices. Besides, gas price rising impacts not only on daily life and travel, but also on various trades and industries.Through analyzing the historical natural gas datasets from U.S., we provide a platform for people explore more about the changes of natural gas price and use machine learning model to help them predict accurate gas price in the future.  
 - Description of the source of data
+  - U.S Natural Gas Imports vs. Exports
+    - Gas Imports Price vs. Exports Price
+    - Gas Total Imports vs. Exports
+  - U.S Natural Gas Supply vs. Demand
+    - Market Gas Production 
+    - Gas Total Consumption
+  - U.S Natural Gas in Storage from Underground 
+  - U.S Natural Gas by Categories ($/Gallon)
+    - All Grades All Formulations Retail Gasoline Prices 
+    - Regular All Formulations Retail Gasoline Prices
+    - Midgrade All Formulations Retail Gasoline Prices
+    - Premium All Formulations Retail Gasoline Prices
+    - No 2 Diesel Retail Prices
+  - U.S All_Grades All_Formulations Retail Price
+  - California Regular All_Formulations Retail Price
 - Questions hope to answer with the data
   - What is the average natural gas price now and future.
   - How the natural gas price changed from the last decades.
   - Which machine learning model can help us to predict the gas price.
   - Make a better decision on energy using and planning in the future.
-  - 
-### Datasets
-- U.S Natural Gas Imports vs. Exports
-  - Gas Imports Price vs. Exports Price
-  - Gas Total Imports vs. Exports
-- U.S Natural Gas Supply vs. Demand
-  - Market Gas Production 
-  - Gas Total Consumption
-- U.S Natural Gas in Storage from Underground 
-- U.S Natural Gas by Categories ($/Gallon)
-  - All Grades All Formulations Retail Gasoline Prices (A1)
-  - All Grades Conventional Retail Gasoline Prices(A2)
-  - All Grades Reformulated Retail Gasoline Prices(A3)
-  - Regular All Formulations Retail Gasoline Prices(R1)
-  - Regular Conventional Retail Gasoline Prices(R2)
-  - Regular Reformulated Retail Gasoline Prices(R3)
-  - Midgrade All Formulations Retail Gasoline Prices(M1)
-  - Midgrade Conventional Retail Gasoline Prices(M2)
-  - Midgrade Reformulated Retail Gasoline Prices(M3)
-  - Premium All Formulations Retail Gasoline Prices(P1)
-  - Premium Conventional Retail Gasoline Prices(P2)
-  - Premium Reformulated Retail Gasoline Prices (P3)
-  - No 2 Diesel Retail Prices(D1)
-- U.S All_Grades All_Formulations Retail Price
-- California Regular All_Formulations Retail Price
 
-### Machine Learning Model Prediction
-#### Supervised Learning (Analyzing the input data)
+## Machine Learning Model Prediction
+### Supervised Learning 
 - Logistic Regression (algorithm)
 - Support Vector Machine(SVM)
 - Random Forests Classifier
-#### Advance Machine Learning Model (Deep Learning Model, analyze the input data)
+### Advance Machine Learning Model 
 - Neuron Network Model (algorithm)
-#### Analyze the output data(regression, or classification, or clustering)
-- K-means (clustering algorithm)
-
-
-#### Performance of Models
-
+### Performance of Models  
+Analyze the output data(regression, or classification, or clustering)
 
 ## Results
 ## Summary
