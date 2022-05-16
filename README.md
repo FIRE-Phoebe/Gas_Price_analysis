@@ -12,10 +12,8 @@ We are happy to provide the tool that we created, so people can check the future
 ## Resources 
 - California_Regular_All_Formulations_Retail_Gasoline_Prices.csv :
   - https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=pet&s=emm_epmr_pte_sca_dpg&f=m
-- U.S._All_Grades_All_Formulations_Retail_Gasoline_Prices.csv :
-  - https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=EMM_EPM0_PTE_NUS_DPG&f=M
 - gas_prices_by_type.csv :
-  - https://www.kaggle.com/datasets/mruanova/us-gasoline-and-diesel-retail-prices-19952021?select=PET_PRI_GND_DCUS_NUS_W.csv
+  - https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm
 - Price_of_U.S._Natural_Gas_Exports.csv :
   - https://www.eia.gov/dnav/ng/hist/n9130us3m.htm
 - Price_of_U.S._Natural_Gas_Imports.csv :
