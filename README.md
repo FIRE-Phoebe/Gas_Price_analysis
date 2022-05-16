@@ -31,7 +31,13 @@ We are happy to provide the tool that we created, so people can check the future
 
 ## DB Diagram
 
+- ERD
+
 ![ERD](Images/ERD.png)
+
+- Schema
+
+![table](Images/schema.png)
 
 ## Results
 
