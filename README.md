@@ -43,8 +43,7 @@ Gas Price Analysis project use Python, ETL, Web Scaping, and Machine Learning Mo
 - Neuron Network Model (algorithm)
 ### Performance of Models  
 Analyze the output data(regression, or classification, or clustering)
-=======
->>>>>>> main
+
 
 
 ## Results
