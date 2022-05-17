@@ -22,7 +22,10 @@ Gas Price Analysis project use Python, ETL, Web Scaping, and Machine Learning Mo
     - No 2 Diesel Retail Prices
   - California Regular All_Formulations Retail Price
 
-![ERD](Resources/images/ERD.png)
+- ERD:
+
+
+  <img src='Resources/images/ERD.png' width=800 height=400 >
 
 - Questions hope to answer with the data
   - What is the average natural gas price now and future.
