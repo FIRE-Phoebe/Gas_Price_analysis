@@ -43,7 +43,7 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
 ### Deep Learning Model 
 - Neuron Network Model (algorithm)
 ### Performance of Models  
-Analyze the output data(regression, or classification, or clustering)
+- Confusion Metrics of each model
 
 
 ## Results
