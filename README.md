@@ -29,6 +29,7 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
 
 - Questions hope to answer with the data
   - What is the average natural gas price now and future.
+  - What is the factors affecting the gas price.
   - How the natural gas price changed from the last decades.
   - Which machine learning model can help us to predict the gas price.
   - Make a better decision on energy using and planning in the future.
