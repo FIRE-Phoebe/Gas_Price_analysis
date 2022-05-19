@@ -37,13 +37,11 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
 ## Machine Learning Model Prediction
 ### Supervised Learning 
 - Multiple Linear Regression 
-- Logistic Regression (algorithm)
-- Support Vector Machine(SVM)
-- Random Forests Classifier
+
 ### Deep Learning Model 
 - Neuron Network Model (algorithm)
 ### Performance of Models  
-- Confusion Metrics of each model
+
 
 
 ## Results
