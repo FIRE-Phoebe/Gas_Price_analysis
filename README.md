@@ -69,6 +69,8 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
   - https://www.eia.gov/dnav/ng/hist/n9140us2m.htm
 - U.S._Natural_Gas_Underground_Storage_Volume.csv :
   - https://www.eia.gov/dnav/ng/hist/n5030us2m.htm
+- U.S. 2022 Population
+  - https://worldpopulationreview.com/states
 
 
 ### Roles for Analysis
