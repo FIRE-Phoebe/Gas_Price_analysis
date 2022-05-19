@@ -37,12 +37,16 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
 ## Machine Learning Model Prediction
 ### Supervised Learning 
 - Multiple Linear Regression 
+  - Intercept
+  - Coefficients
+### STATS Model  
+- Ordinary Least Squares regression
+  - Adjusted R-squared
+  - constant coefficient
+  - Significant level of each variables
 
-### Deep Learning Model 
-- Neuron Network Model (algorithm)
-### Performance of Models  
-
-
+### Data Visualization
+- Seaborn from Python
 
 ## Results
 
