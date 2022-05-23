@@ -1,6 +1,7 @@
 # Gas Price Analysis
 ## Overview of the Analysis
-Our Gas Price Analysis uses Python, ETL, Web Scraping, and Machine Learning to explore the future Gas Price in the U.S. We perform price forecasting and prediction to visualize our findings based on the data from the last two decades on the gas consumption, supply, gas types, inflation, and other factors that we think could affect gas price. Our goal is to provide users to access the information when they input year and month.
+Our Gas Price Analysis uses Python, ETL, Web Scraping, and Machine Learning to explore the future Gas Price in the U.S. We perform Supervised Machine Learning 
+to find the best model for price forecasting and visualize our findings based on the data from the last two decades on the gas consumption, supply, gas types, inflation, and other factors that we think could affect gas price. Later, our goal is to provide users the access to the platform that we created for the information when they input year and month.
 
 ## Presentation
 - PowerPoint (Google Slides): https://docs.google.com/presentation/d/1XPCqnkOeaemkxZTu8BPxTlwjLJBWvVgrxnUrUHRo_xg/edit#slide=id.gc6f980f91_0_0
