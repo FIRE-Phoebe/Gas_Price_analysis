@@ -1,11 +1,11 @@
 # Gas Price Analysis
 ## Overview of the Analysis
-Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning Model to explore the future Gas Price in the U.S . We perform price forecasting and prediction to visualize our findings based on the gas consumption, supply, and gas types in the last two decades. Our goal is to provide users to predict the future gas price in U.S. by interacting with different Machine Learning Model.
+Our Gas Price Analysis uses Python, ETL, Web Scraping, and Machine Learning to explore the future Gas Price in the U.S. We perform price forecasting and prediction to visualize our findings based on the data from the last two decades on the gas consumption, supply, gas types, inflation, and other factors that we think could affect gas price. Our goal is to provide users to access the information when they input year and month.
 
 ## Presentation
 - PowerPoint (Google Slides): https://docs.google.com/presentation/d/1XPCqnkOeaemkxZTu8BPxTlwjLJBWvVgrxnUrUHRo_xg/edit#slide=id.gc6f980f91_0_0
 - Topic: Gas Price Prediction and Analysis
-- Reason: After a pandemic, people are planning to going back to work. Drivers bemoan high gasoline prices. Besides, gas price rising impacts not only on daily life and travel, but also on various trades and industries.Through analyzing the historical natural gas datasets from U.S., we provide a platform for people explore more about the changes of natural gas price and use machine learning model to help them predict accurate gas price in the future.  
+- Reason: After a pandemic, people are planning to go back to work. Drivers bemoan high gasoline prices. Besides, an increase in gas price impacts not only on daily life and travel, but also on various trades and industries.Through analyzing the historical natural gas datasets from U.S., we provide a platform for people explore more about the changes of natural gas price and use machine learning model to help them predict accurate gas price in the future.  
 
 - Description of the source of data
   - U.S Natural Gas Imports vs. Exports 
