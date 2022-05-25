@@ -35,13 +35,20 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
 
 ## Machine Learning Model Prediction
 ### Supervised Learning 
-- Logistic Regression (algorithm)
-- Support Vector Machine(SVM)
-- Random Forests Classifier
+- Multiple Linear Regression
+  - MRM1: Multiple Regression Model_1
+    - Factors: production, consumption, import_price, export_price, total imports, total exports, gas_price by types(all_grades, regular, midgrade, premium, diesel), volumn.
+    - target: all_grades_price
+    - intercept: 2.72
+    - coefficients: 
+     
+   <img src='Resources/images/mrm_1.png' width=900 height=200>
+   
+   
 ### Advance Machine Learning Model 
-- Neuron Network Model (algorithm)
+- Neuron Network 
 ### Performance of Models  
-Analyze the output data(regression, or classification, or clustering)
+Analyze the output data
 
 
 ## Results
