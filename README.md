@@ -46,7 +46,8 @@ to find the best model for price forecasting and visualize our findings based on
   - Adjusted R-squared
   - constant coefficient
   - Significant level of each variables
-
+### Model Evaluation
+- each attemps results:
 ### Data Visualization
 - Seaborn from Python
 
