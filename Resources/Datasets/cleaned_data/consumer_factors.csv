@@ -1,4 +1,4 @@
-Year,all_conusmers(Mmcf),commercial_consumers(Mmcf),electric_consumers(Mmcf),industrual_consumers(Mcf),residential_consumers(Mmcf),vehicle_consumers(Mmcf)
+Year,all_conusmers(Mmcf),commercial_consumers(Mmcf),electric_consumers(Mmcf),industrial_consumers(Mmcf),residential_consumers(Mmcf),vehicle_consumers(Mmcf)
 2021,27437503,3263722,11270552,8196569,4653503,53157
 2020,27660375,3170221,11615988,8150724,4674311,49130
 2019,28291006,3514566,11288096,8416660,5018519,53166
