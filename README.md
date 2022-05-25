@@ -35,7 +35,7 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
 
 ## Machine Learning Model Prediction
 ### Supervised Learning 
-- Multiple Linear Regression
+- Multiple Linear Regression(3 attemps with different factors)
   - MRM1: Multiple Regression Model_1
     - Factors: production, consumption, import_price, export_price, total imports, total exports, gas_price by types(all_grades, regular, midgrade, premium, diesel), volumn.
     - target: all_grades_price
@@ -44,7 +44,10 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
      
    <img src='Resources/images/mrm_1.png' width=900 height=200>
    
-   
+  - MRM2: Multiple Regression Model_2
+
+
+
 ### Advance Machine Learning Model 
 - Neuron Network 
 ### Performance of Models  
