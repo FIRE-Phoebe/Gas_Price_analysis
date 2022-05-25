@@ -1,3 +1,6 @@
+#add ignore files
+Time_series_model.ipynb
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
