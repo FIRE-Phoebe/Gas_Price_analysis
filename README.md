@@ -1,12 +1,10 @@
 # Gas Price Analysis
 ## Overview of the Analysis
-Our Gas Price Analysis uses Python, ETL, Web Scraping, and Machine Learning to explore the future Gas Price in the U.S. We perform Supervised Machine Learning 
-to find the best model for price forecasting and visualize our findings based on the data from the last two decades on the gas consumption, supply, gas types, inflation, and other factors that we think could affect gas price. Later, our goal is to provide users the access to the platform that we created for the information when they input year and month.
+Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning Model to explore the future Gas Price in the U.S . We perform price forecasting and prediction to visualize our findings based on the gas consumption, supply, and gas types in the last two decades. Our goal is to provide users to predict the future gas price in U.S. by interacting with different Machine Learning Model.
 
 ## Presentation
-- PowerPoint (Google Slides): https://docs.google.com/presentation/d/1XPCqnkOeaemkxZTu8BPxTlwjLJBWvVgrxnUrUHRo_xg/edit#slide=id.gc6f980f91_0_0
 - Topic: Gas Price Prediction and Analysis
-- Reason: After a pandemic, people are planning to go back to work. Drivers bemoan high gasoline prices. Besides, an increase in gas price impacts not only on daily life and travel, but also on various trades and industries.Through analyzing the historical natural gas datasets from U.S., we provide a platform for people explore more about the changes of natural gas price and use machine learning model to help them predict accurate gas price in the future.  
+- Reason: After a pandemic, people are planning to going back to work. Drivers bemoan high gasoline prices. Besides, gas price rising impacts not only on daily life and travel, but also on various trades and industries.Through analyzing the historical natural gas datasets from U.S., we provide a platform for people explore more about the changes of natural gas price and use machine learning model to help them predict accurate gas price in the future.  
 
 - Description of the source of data
   - U.S Natural Gas Imports vs. Exports 
@@ -31,25 +29,50 @@ to find the best model for price forecasting and visualize our findings based on
 
 - Questions hope to answer with the data
   - What is the average natural gas price now and future.
-  - What is the factors affecting the gas price.
   - How the natural gas price changed from the last decades.
   - Which machine learning model can help us to predict the gas price.
   - Make a better decision on energy using and planning in the future.
 
 ## Machine Learning Model Prediction
 ### Supervised Learning 
-- Multiple Linear Regression 
-  - Intercept
-  - Coefficients
-### STATS Model  
-- Ordinary Least Squares regression
-  - Adjusted R-squared
-  - constant coefficient
-  - Significant level of each variables
-### Model Evaluation
-- each attemps results:
-### Data Visualization
-- Seaborn from Python
+- Multiple Linear Regression(3 attemps with different factors)
+  - MRM1: Multiple Regression Model_1
+    - Factors: year, production, consumption, import_price, export_price, total imports, total exports, gas_price by types(all_grades, regular, midgrade, premium, diesel), volumn(storage).
+    - target: all_grades_price
+    - intercept: 2.81
+    - coefficients: 
+     
+   <img src='Resources/images/mrm_1.png' width=900 height=200>
+   
+  - MRM2: Multiple Regression Model_2
+    - Add additional Factors: inflation, stock_to_GDP, working_population, interest_rate.
+    - target: all_grades_price
+    - intercept: 2.64
+    - coefficients: 
+    
+    <img src='Resources/images/mrm_2.png' width=900 height=200>
+    
+  - MRM3: Multiple Regression Model_3
+    - Drop Dummies Factors: gas_price by types(all_grades, regular, midgrade, premium, diesel)
+    - target: all_grades_price
+    - intercept: 2.28
+    - coefficients: 
+    
+    <img src='Resources/images/mrm_3.png' width=900 height=200>
+  
+  - MRM4: Multiple Regression Model_4
+    - Add Consumer_types without dummies Factors: all_consumers, consumer_types(commercial_, elecric_, industrial_, residential_, vehicle_consumers)
+    - target: all_grades_price
+    - intercept: 2.81
+    - coefficients: 
+    
+    <img src='Resources/images/mrm_4.png' width=900 height=200>
+
+### Advance Machine Learning Model 
+- Neuron Network 
+### Performance of Models  
+Analyze the output data
+
 
 ## Results
 
@@ -74,8 +97,6 @@ to find the best model for price forecasting and visualize our findings based on
   - https://www.eia.gov/dnav/ng/hist/n9140us2m.htm
 - U.S._Natural_Gas_Underground_Storage_Volume.csv :
   - https://www.eia.gov/dnav/ng/hist/n5030us2m.htm
-- U.S. 2022 Population
-  - https://worldpopulationreview.com/states
 
 
 ### Roles for Analysis
