@@ -37,16 +37,36 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
 ### Supervised Learning 
 - Multiple Linear Regression(3 attemps with different factors)
   - MRM1: Multiple Regression Model_1
-    - Factors: production, consumption, import_price, export_price, total imports, total exports, gas_price by types(all_grades, regular, midgrade, premium, diesel), volumn.
+    - Factors: year, production, consumption, import_price, export_price, total imports, total exports, gas_price by types(all_grades, regular, midgrade, premium, diesel), volumn(storage).
     - target: all_grades_price
-    - intercept: 2.72
+    - intercept: 2.81
     - coefficients: 
      
    <img src='Resources/images/mrm_1.png' width=900 height=200>
    
   - MRM2: Multiple Regression Model_2
-
-
+    - Add additional Factors: inflation, stock_to_GDP, working_population, interest_rate.
+    - target: all_grades_price
+    - intercept: 2.64
+    - coefficients: 
+    
+    <img src='Resources/images/mrm_2.png' width=900 height=200>
+    
+  - MRM3: Multiple Regression Model_3
+    - Drop Dummies Factors: gas_price by types(all_grades, regular, midgrade, premium, diesel)
+    - target: all_grades_price
+    - intercept: 2.28
+    - coefficients: 
+    
+    <img src='Resources/images/mrm_3.png' width=900 height=200>
+  
+  - MRM4: Multiple Regression Model_4
+    - Add Consumer_types without dummies Factors: all_consumers, consumer_types(commercial_, elecric_, industrial_, residential_, vehicle_consumers)
+    - target: all_grades_price
+    - intercept: 2.81
+    - coefficients: 
+    
+    <img src='Resources/images/mrm_4.png' width=900 height=200>
 
 ### Advance Machine Learning Model 
 - Neuron Network 
