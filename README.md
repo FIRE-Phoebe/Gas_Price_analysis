@@ -21,6 +21,17 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
     - Premium All Formulations Retail Gasoline Prices
     - No 2 Diesel Retail Prices
   - California Regular All_Formulations Retail Price
+  - U.S Infaltion Rate
+  - U.S Stock to GDP
+  - U.S Working Population
+  - U.S Interest Rate
+  - U.S Natural Gas Deliver to Consumers (types of consumers)
+    - Commercial
+    - Electric Power
+    - Industrial
+    - Residential
+    - Vehicle_Fuel
+  
 
 - ERD:
 
