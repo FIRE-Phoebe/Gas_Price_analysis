@@ -61,7 +61,8 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
     - intercept: 2.64
     - coefficients: 
     
-    <img src='Resources/images/mrm_2.png' width=900 height=200>
+    <img src='Resources/images/mrm_2.PNG' width=900 height=200>
+    <img src='Resources/images/mrm_2.1.PNG' width=500 height=100>
     
   - MRM3: Multiple Regression Model_3
     - Drop Dummies Factors: gas_price by types(all_grades, regular, midgrade, premium, diesel)
@@ -69,8 +70,9 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
     - intercept: 2.28
     - coefficients: 
     
-    <img src='Resources/images/mrm_3.png' width=900 height=200>
-  
+    <img src='Resources/images/mrm_3.PNG' width=900 height=200>
+    <img src='Resources/images/mrm_3.1.PNG' width=500 height=100>
+    
   - MRM4: Multiple Regression Model_4
     - Add Consumer_types without dummies Factors: all_consumers, consumer_types(commercial_, elecric_, industrial_, residential_, vehicle_consumers)
     - target: all_grades_price
