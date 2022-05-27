@@ -90,13 +90,29 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
     <p align=center>
      <img src='Resources/images/mrm_4.0.PNG' width=700 height=50></p>
     
-    
-### Advance Machine Learning Model 
-- Neuron Network 
+### Advance Machine Learning Model
+- Artificial neural networks(ANN)
+
 ### Performance of Models
+#### Model Pros and Cons
+- Multiple Linear Regression
+- Artificial neural networks
+
+#### Variables summary:
+1. Original U.S gas dataset:
+<p align=center>
+    <img src='Resources/images/var_summary_table1.PNG' width=700 height=350 ></p>
+
+2. Four Additional Factors:
+<p align=center>
+  <img src='Resources/images/addition_var_summary_table.PNG' width=800 height=150></p>
+
+3. Consumers types:
+<p align=center>
+  <img src='Resources/images/consumer_var_summary_table.PNG' width=800 height=200></p>
+  
 #### Measure Metrics:
-R^2 Score: 
-- Residual squared score that efers to the coefficient of determination. It tells how well the unknoen samples will be predicted by model.(best is 1.0, can be negative)
+- R^2 Score: Residual squared score that efers to the coefficient of determination. It tells how well the unknoen samples will be predicted by model.(best is 1.0, can be negative)
 - MAE: Mean absolute error, which is the average of absolute errors off all the data points in the given dataset.
 - MSE: Mean squared error, which is the average of the squares of the errors of all the data points in the given dataset.
 - MAE*: Median of all the errors in the given dataset. (it's robust to outliers)
