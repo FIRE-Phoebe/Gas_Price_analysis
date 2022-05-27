@@ -51,7 +51,7 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
     - intercept: 2.81
     - coefficients: 
      
-     <img src='Resources/images/mrm_1.PNG' width=800 height=50>
+     <img src='Resources/images/mrm_1.PNG' width=900 height=50>
    
   - MRM2: Multiple Regression Model_2
     - Add additional Factors: inflation, stock_to_GDP, working_population, interest_rate.
@@ -59,11 +59,11 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
     - intercept: 2.64
     - coefficients: 
     
-    <img src='Resources/images/mrm_2.PNG' width=800 height=50>
+    <img src='Resources/images/mrm_2.PNG' width=900 height=50>
     
        - Additional factors coefficients: 
       <p align=center>
-     <img src='Resources/images/mrm_2.0.PNG' width=350 height=50></p>
+     <img src='Resources/images/mrm_2.0.PNG' width=450 height=50></p>
     
   - MRM3: Multiple Regression Model_3
     - Drop Dummies Factors: gas_price by types(all_grades, regular, midgrade, premium, diesel)
@@ -71,11 +71,11 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
     - intercept: 2.28
     - coefficients: 
     
-    <img src='Resources/images/mrm_3.PNG' width=800 height=50>
+    <img src='Resources/images/mrm_3.PNG' width=900 height=50>
     
     - Additional factors coefficients: 
     <p align=center>
-     <img src='Resources/images/mrm_3.0.PNG' width=400 height=45></p>
+     <img src='Resources/images/mrm_3.0.PNG' width=450 height=45></p>
     
   - MRM4: Multiple Regression Model_4
     - Add Consumer_types without dummies Factors: all_consumers, consumer_types(commercial_, elecric_, industrial_, residential_, vehicle_consumers)
