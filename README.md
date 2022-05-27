@@ -32,9 +32,7 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
     - Residential
     - Vehicle_Fuel
   
-
 - ERD:
-
 
   <img src='Resources/images/ERD.png' width=800 height=400 >
 
@@ -77,7 +75,7 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
     
     - Additional factors coefficients: 
     <p align=center>
-     <img src='Resources/images/mrm_3.1.PNG' width=350 height=40></p>
+     <img src='Resources/images/mrm_3.1.PNG' width=400 height=45></p>
     
   - MRM4: Multiple Regression Model_4
     - Add Consumer_types without dummies Factors: all_consumers, consumer_types(commercial_, elecric_, industrial_, residential_, vehicle_consumers)
