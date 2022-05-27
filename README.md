@@ -93,9 +93,16 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
     
 ### Advance Machine Learning Model 
 - Neuron Network 
-### Performance of Models  
-Analyze the output data
+### Performance of Models
+#### Measure Metrics:
+R^2 Score: 
+- Residual squared score that efers to the coefficient of determination. It tells how well the unknoen samples will be predicted by model.(best is 1.0, can be negative)
+- MAE: Mean absolute error, which is the average of absolute errors off all the data points in the given dataset.
+- MSE: Mean squared error, which is the average of the squares of the errors of all the data points in the given dataset.
+- MAE*: Median of all the errors in the given dataset. (it's robust to outliers)
+- EVS: Explained variance score that measures how well out model can account for the variation in the dataset. (1.0 indicatesthat model is perfect.)
 
+    <img src='Resources/images/Model_evaluation.PNG' width=700 height=150>
 
 ## Results
 
