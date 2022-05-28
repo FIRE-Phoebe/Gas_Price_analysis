@@ -3,6 +3,7 @@
 Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning Model to explore the future Gas Price in the U.S . We perform price forecasting and prediction to visualize our findings based on the gas consumption, supply, and gas types in the last two decades. Our goal is to provide users to predict the future gas price in U.S. by interacting with different Machine Learning Model.
 
 ## Presentation
+- PowerPoint (Google Slides): https://docs.google.com/presentation/d/1XPCqnkOeaemkxZTu8BPxTlwjLJBWvVgrxnUrUHRo_xg/edit#slide=id.gc6f980f91_0_0
 - Topic: Gas Price Prediction and Analysis
 - Reason: After a pandemic, people are planning to going back to work. Drivers bemoan high gasoline prices. Besides, gas price rising impacts not only on daily life and travel, but also on various trades and industries.Through analyzing the historical natural gas datasets from U.S., we provide a platform for people explore more about the changes of natural gas price and use machine learning model to help them predict accurate gas price in the future.  
 
@@ -21,9 +22,18 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
     - Premium All Formulations Retail Gasoline Prices
     - No 2 Diesel Retail Prices
   - California Regular All_Formulations Retail Price
-
+  - U.S Infaltion Rate
+  - U.S Stock to GDP
+  - U.S Working Population
+  - U.S Interest Rate
+  - U.S Natural Gas Deliver to Consumers (types of consumers)
+    - Commercial
+    - Electric Power
+    - Industrial
+    - Residential
+    - Vehicle_Fuel
+  
 - ERD:
-
 
   <img src='Resources/images/ERD.png' width=800 height=400 >
 
@@ -35,46 +45,89 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
 
 ## Machine Learning Model Prediction
 ### Supervised Learning 
-- Multiple Linear Regression(3 attemps with different factors)
+- Multiple Linear Regression(4 attemps with different factors)
   - MRM1: Multiple Regression Model_1
     - Factors: year, production, consumption, import_price, export_price, total imports, total exports, gas_price by types(all_grades, regular, midgrade, premium, diesel), volumn(storage).
     - target: all_grades_price
-    - intercept: 2.81
-    - coefficients: 
-     
-   <img src='Resources/images/mrm_1.png' width=900 height=200>
-   
+
   - MRM2: Multiple Regression Model_2
     - Add additional Factors: inflation, stock_to_GDP, working_population, interest_rate.
     - target: all_grades_price
-    - intercept: 2.64
-    - coefficients: 
-    
-    <img src='Resources/images/mrm_2.png' width=900 height=200>
-    
+        
   - MRM3: Multiple Regression Model_3
     - Drop Dummies Factors: gas_price by types(all_grades, regular, midgrade, premium, diesel)
     - target: all_grades_price
-    - intercept: 2.28
-    - coefficients: 
     
-    <img src='Resources/images/mrm_3.png' width=900 height=200>
-  
   - MRM4: Multiple Regression Model_4
     - Add Consumer_types without dummies Factors: all_consumers, consumer_types(commercial_, elecric_, industrial_, residential_, vehicle_consumers)
     - target: all_grades_price
-    - intercept: 2.81
-    - coefficients: 
     
-    <img src='Resources/images/mrm_4.png' width=900 height=200>
+### Advance Machine Learning Model
+- Artificial neural networks(ANN)
 
-### Advance Machine Learning Model 
-- Neuron Network 
-### Performance of Models  
-Analyze the output data
+### Performance of Models
+#### Model Pros and Cons
+- Multiple Linear Regression
+- Artificial neural networks
 
+#### Variables summary:
+1. Original U.S gas dataset:
+<p align=center>
+    <img src='Resources/images/var_summary_table1.PNG' width=700 height=350 ></p>
+
+2. Four Additional Factors:
+<p align=center>
+  <img src='Resources/images/addition_var_summary_table.PNG' width=800 height=150></p>
+
+3. Consumers types:
+<p align=center>
+  <img src='Resources/images/consumer_var_summary_table.PNG' width=800 height=200></p>
+  
+#### Measure Metrics:
+- R-squared Score: Residual squared score that efers to the coefficient of determination. It tells how well the unknoen samples will be predicted by model.(The best is 1.0, can be negative)
+- MAE: Mean absolute error; the average of absolute errors off all the data points in the given dataset.
+- MSE: Mean squared error; the average of the squares of the errors of all the data points in the given dataset.
+- MAE*: Median of all the errors in the given dataset. (it's robust to outliers)
+- EVS: Explained variance score; measures how well out model can account for the variation in the dataset. (1.0 indicatesthat model is perfect.)
+
+    <img src='Resources/images/Model_evaluation.PNG' width=700 height=150>
 
 ## Results
+MRM1:
+- intercept: 2.81
+- coefficients: 
+     
+     <img src='Resources/images/mrm_1.PNG' width=900 height=50>
+MRM2:
+- intercept: 2.64
+- coefficients: 
+    
+    <img src='Resources/images/mrm_2.PNG' width=900 height=50>
+    
+- Additional factors coefficients: 
+      <p align=center>
+     <img src='Resources/images/mrm_2.0.PNG' width=450 height=50></p>
+MRM3:
+- intercept: 2.28
+- coefficients: 
+    
+    <img src='Resources/images/mrm_3.PNG' width=900 height=50>
+    
+- Additional factors coefficients: 
+    <p align=center>
+     <img src='Resources/images/mrm_3.0.PNG' width=450 height=45></p>
+     
+MRM4:
+- intercept: 2.81
+- coefficients: 
+    
+    <img src='Resources/images/mrm_4.PNG' width=900 height=50>
+    
+- Additional Factors
+
+    <p align=center>
+     <img src='Resources/images/mrm_4.0.PNG' width=700 height=50></p>
+    
 
 ## Summary
 
@@ -101,5 +154,5 @@ Analyze the output data
 
 ### Roles for Analysis
 - Contributors
-  - Phoebe J.Miao: responsible for repository, design machine learning model and create a diagram explains ML model within the project scope. Data preprocessing and cleaning. Decide analysis technologies to be used for each steps of the project.
-  - Kimberly Kang: create a mockup of a database with a set of sample data ensure the dataset are sourced and able to load from database. Responsible for dataset updates, download, and ERDs to give a big picture of dataset. Decide analysis technologies to be used for each steps of the project.
+  - Phoebe J.Miao: responsible for repository, design machine learning model and create a diagram explains ML model within the project scope. Data preprocessing and cleaning. Decide analysis technologies to be used for each steps of the project. Organize all regression results and summarize them in readme file. Add contents into the PowerPoint file.
+  - Kimberly Kang: create a mockup of a database with a set of sample data to ensure that the datasets are sourced and are able to be loaded from database. Responsible for dataset updates, download, and ERDs to give a big picture of dataset. Decide analysis technologies to be used for each step of the project. Build html, app.py, scraping.py, and Python coding for scraping latest Gas Price news articles. Preprare a PowerPoint structure.
