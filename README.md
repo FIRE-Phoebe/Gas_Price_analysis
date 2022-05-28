@@ -84,11 +84,11 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
   <img src='Resources/images/consumer_var_summary_table.PNG' width=800 height=200></p>
   
 #### Measure Metrics:
-- R^2 Score: Residual squared score that efers to the coefficient of determination. It tells how well the unknoen samples will be predicted by model.(best is 1.0, can be negative)
-- MAE: Mean absolute error, which is the average of absolute errors off all the data points in the given dataset.
-- MSE: Mean squared error, which is the average of the squares of the errors of all the data points in the given dataset.
+- R-squared Score: Residual squared score that efers to the coefficient of determination. It tells how well the unknoen samples will be predicted by model.(The best is 1.0, can be negative)
+- MAE: Mean absolute error; the average of absolute errors off all the data points in the given dataset.
+- MSE: Mean squared error; the average of the squares of the errors of all the data points in the given dataset.
 - MAE*: Median of all the errors in the given dataset. (it's robust to outliers)
-- EVS: Explained variance score that measures how well out model can account for the variation in the dataset. (1.0 indicatesthat model is perfect.)
+- EVS: Explained variance score; measures how well out model can account for the variation in the dataset. (1.0 indicatesthat model is perfect.)
 
     <img src='Resources/images/Model_evaluation.PNG' width=700 height=150>
 
@@ -154,5 +154,5 @@ MRM4:
 
 ### Roles for Analysis
 - Contributors
-  - Phoebe J.Miao: responsible for repository, design machine learning model and create a diagram explains ML model within the project scope. Data preprocessing and cleaning. Decide analysis technologies to be used for each steps of the project.
-  - Kimberly Kang: create a mockup of a database with a set of sample data ensure the dataset are sourced and able to load from database. Responsible for dataset updates, download, and ERDs to give a big picture of dataset. Decide analysis technologies to be used for each steps of the project.
+  - Phoebe J.Miao: responsible for repository, design machine learning model and create a diagram explains ML model within the project scope. Data preprocessing and cleaning. Decide analysis technologies to be used for each steps of the project. Organize all regression results and summarize them in readme file. Add contents into the PowerPoint file.
+  - Kimberly Kang: create a mockup of a database with a set of sample data to ensure that the datasets are sourced and are able to be loaded from database. Responsible for dataset updates, download, and ERDs to give a big picture of dataset. Decide analysis technologies to be used for each step of the project. Build html, app.py, scraping.py, and Python coding for scraping latest Gas Price news articles. Preprare a PowerPoint structure.
