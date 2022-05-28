@@ -1,5 +1,6 @@
 #add ignore file
 Time_series_model.ipynb
+ML-Price_consumers.ipynb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
