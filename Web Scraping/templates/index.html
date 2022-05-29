@@ -14,8 +14,12 @@
     <div class="hero"></div>
     <style>
       body {
-        background-image: url('../images/Gas-Station-Price-Signs-Background-Image.png');
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.432) 0%,rgba(0, 0, 0, 0.26) 100%), url('../images/Gas-Station-Price-Signs-Background-Image.png');
+        /* background-image: url('../images/Gas-Station-Price-Signs-Background-Image.png'); */
+        /* background-image: url('https://www.movebuddha.com/wp-content/uploads/2022/04/version_01-1.jpg'); */
+        /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.432) 0%,rgba(0, 0, 0, 0.26) 100%), url('../images/Gas-Station-Price-Signs-Background-Image.png'); */
+        /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.432) 0%,rgba(0, 0, 0, 0.26) 100%), url('https://images.pexels.com/photos/3814729/pexels-photo-3814729.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+        background-image: linear-gradient(to top, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), url('https://images.pexels.com/photos/10711711/pexels-photo-10711711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.432) 0%,rgba(0, 0, 0, 0.26) 100%), url('https://www.movebuddha.com/wp-content/uploads/2022/04/version_01-1.jpg'); */
         background-size: cover;
 
       }
@@ -27,6 +31,8 @@
       <div style="background-color:grey;" class="jumbotron text-center">
         <h1 style="color: white;">Gas Price Analysis</h1>
         <!-- Add a button to activate scraping script -->
+        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+        <!-- Add a button to activate scraping script -->
         <p class="lead" style="font-weight:bold">by: THE TWO GASSY GIRLS</p>
         <hr class="my-4">
         <a class="btn btn-Dark btn-sm" style="color:white">LinkedIn Profile : </a>
@@ -34,8 +40,8 @@
         <a class="btn btn-Dark btn-sm" href="https://www.linkedin.com/in/phoebemiao/" style="color:white">Phoebe Miao</a>
       </div>
 
-      <!-- Add section for Mars News -->
-      <div class="row" id="mars-news">
+      <!-- Add section for gas News -->
+      <div class="row" id="gas-news">
         <div class="col-md-12">
           <div class="media">
             <div class="media-body">
@@ -43,48 +49,97 @@
                 <h2 style="color:white;font-weight:bold; text-align: center">Latest Gas Price News</h2>
 
               </div>
-              <h4 class="media-heading" style="color:white; text-align: center">{{ mars.news_title }}</h4>
-              <p style="color:white; text-align: center">{{ mars.news_paragraph }}</p>
+              <h4 class="media-heading" style="color:white; text-align: center">{{ gas.news_title }}</h4>
+              <p style="color:white; text-align: center">{{ gas.news_paragraph }}</p>
+              <p style="color:white; text-align: center">{{ gas.news_link }}</p>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Section for Real Time Gas price table from gasbuddy.com -->
-      <div class="row" id="mars-featured-image">
+      <!-- <div class="row" id="gas_news">
         <div class="col-md-12">
           <div class="page-header">
             <h2 style="color:white;font-weight:bold; text-align: center">National Average Gas Prices (Real Time)</h2>
-          </div>
+          </div> -->
           
-          <!-- if images is False/None/non-existent, then default to error message -->
-          <img
-            src="{{mars.featured_image | default('static/images/error.png', true) }}"
-            class="img-responsive"
-            alt="Responsive image"
-          />
-        </div>
+
         
-      <div class="row" id="mars-featured-image">
+      <div class="row">
         <div class="col-md-12">
           <div class="page-header">
-            <h2 style="color:white;font-weight:bold; text-align: center">Predicted Price</h2>
+            <h2 style="color:white;font-weight:bold; text-align: center">Our Gas Price Analysis</h2>
           </div>
-             
-            <!-- if images is False/None/non-existent, then default to error message -->
-          <img
-            src="{{mars.featured_image | default('static/images/error.png', true) }}"
-            class="img-responsive"
-            alt="Responsive image"
-            />
-        </div>
-      </div>
+
+           
+
+          <div class="col-md-12">
+            <h3 style="font-size:130%; color:white; text-align: center; font-weight:bold">Original Factors from the Data Research</h3>
+            <center><img src="https://raw.githubusercontent.com/FIRE-Phoebe/Gas_Price_analysis/main/Resources/images/var_summary_table1.PNG" class = "center"style="width:700px;height:400px;"></center>
+          </div> 
+
+          <div class="col-md-12">
+            <h3 style="font-size:130%; color:white; text-align: center; font-weight:bold">More Interesting Factors </h3>
+            <center><img src="https://raw.githubusercontent.com/FIRE-Phoebe/Gas_Price_analysis/main/Resources/images/addition_var_summary_table.PNG" class = "center"style="width:700px;height:200px;"></center>
+          </div> 
+
+          <div class="col-md-12">
+            <h3 style="font-size:130%; color:white; text-align: center; font-weight:bold">More Factors from Consumer Data</h3>
+            <center><img src="https://raw.githubusercontent.com/FIRE-Phoebe/Gas_Price_analysis/main/Resources/images/consumer_var_summary_table.PNG" class = "center"style="width:700px;height:300px;"></center>
+          </div> 
+
+          <div class="col-md-12">
+            <h3 style="font-size:130%; color:white; text-align: center; font-weight:bold">[Multiple Regression Model 1 (MRM 1)]</h3>
+            <ul>
+              <li style="font-size:120%; color:white;">Factors: year, production, consumption, import_price, export_price, total imports, total exports, gas_price by types(all_grades, regular, midgrade, premium, diesel), volumn(storage).</li>
+              <li style="font-size:120%; color:white;">Target: all_grades_price</li>
+            </ul>
+          </div> 
+          
+          <div class="col-md-12">
+            <h3 style="font-size:130%; color:white; text-align: center; font-weight:bold">[Multiple Regression Model 2 (MRM 2)]</h3>
+            <ul>
+              <li style="font-size:120%; color:white;">Add additional Factors: inflation, stock_to_GDP, working_population, interest_rate.</li>
+              <li style="font-size:120%; color:white;">Target: all_grades_price</li>
+            </ul>
+          </div> 
+
+          <div class="col-md-12">
+            <h3 style="font-size:130%; color:white; text-align: center; font-weight:bold">[Multiple Regression Model 3 (MRM 3)]</h3>
+            <ul>
+              <li style="font-size:120%; color:white;">Drop Dummies Factors: gas_price by types(all_grades, regular, midgrade, premium, diesel)</li>
+              <li style="font-size:120%; color:white;">Target: all_grades_price</li>
+            </ul>
+          </div> 
+
+          <div class="col-md-12">
+            <h3 style="font-size:130%; color:white; text-align: center; font-weight:bold">[Multiple Regression Model 4 (MRM 4)]</h3>
+            <ul>
+              <li style="font-size:120%; color:white;">Add Consumer_types without dummies Factors: all_consumers, consumer_types(commercial_, elecric_, industrial_, residential_, vehicle_consumers)</li>
+              <li style="font-size:120%; color:white;">Target: all_grades_price</li>
+            </ul>
+          </div>
+          
+          <div class="col-md-12">
+            <h3 style="font-size:130%; color:white; text-align: center; font-weight:bold">Measure Metrics with our 4 models</h3>
+            <center><img src="https://raw.githubusercontent.com/FIRE-Phoebe/Gas_Price_analysis/main/Resources/images/Model_evaluation.PNG" class = "center"style="width:700px;height:300px;"></center>
+            <ul>
+              <li style="font-size:120%; color:white;">R-sqaured Value: Residual squared score that efers to the coefficient of determination. It tells how well the unknoen samples will be predicted by model.(best is 1.0, can be negative)</li>
+              <li style="font-size:120%; color:white;">MAE: Mean absolute error; which is the average of absolute errors off all the data points in the given dataset.</li>
+              <li style="font-size:120%; color:white;">MSE: Mean squared error; which is the average of the squares of the errors of all the data points in the given dataset.</li>
+              <li style="font-size:120%; color:white;">MAE*: Median of all the errors in the given dataset. (it's robust to outliers)</li>
+              <li style="font-size:120%; color:white;">EVS: Explained variance score; measures how well out model can account for the variation in the dataset. (1.0 indicatesthat model is perfect.)</li>
+            </ul>
+          </div> 
+
 
       <!-- Section for visualizations -->
     <div class="col-md-12">
-      <div class="row" id="mars-hemispheres">
+      <div class="row">
         <div class="page-header">
-          <h2 class="text-center" style="color:white;font-weight:bold">Interesting Factors on Gas Price</h2>
+          <h2 class="text-center" style="color:white;font-weight:bold">Interesting Factors in Graphs</h2>
+          <p style="color:white; text-align: center">Visualization using Tableau and Python</p>
         </div>
 
         <!-- <div class="row">
@@ -92,25 +147,25 @@
 
           <div class="col-md-6">
             <h3 style="font-size:120%; color:white; text-align: center; font-weight:bold">Price of Import and Export ($/Gallon)</h3>
-            <img src="../images/import_export_graph.png" class = "center" style="width:550px;height:450px;">
+            <img src="https://raw.githubusercontent.com/FIRE-Phoebe/Gas_Price_analysis/1st_segment_K/Resources/images/import_export_graph.png" class = "center" style="width:550px;height:450px;">
           </div>
             <!-- <div class="thumbnail"> -->
           <div class="col-md-6">
             <div class="col-md-12">
               <h3 style="font-size:120%; color:white; text-align: center;font-weight:bold">Stock Market to GDP(%)</h3>
-              <img src="../images/stock_market_to_GDP(%).png" class="center" style="width:550px;height:450px;">
+              <img src="https://raw.githubusercontent.com/FIRE-Phoebe/Gas_Price_analysis/1st_segment_K/Resources/images/stock_market_to_GDP(%25).png" class="center" style="width:550px;height:450px;">
             </div>
           </div>
 
           <div class="col-md-6">
             <h3 style="font-size:120%; color:white; text-align: center; font-weight:bold">Inflation(%)</h3>
-            <img src="../images/inflation.png" class = "center" style="width:550px;height:450px;">
+            <img src="https://raw.githubusercontent.com/FIRE-Phoebe/Gas_Price_analysis/1st_segment_K/Resources/images/inflation.png" class = "center" style="width:550px;height:450px;">
           </div>
             <!-- <div class="thumbnail"> -->
           <div class="col-md-6">
             <div class="col-md-12">
               <h3 style="font-size:120%; color:white; text-align: center;font-weight:bold">Interest Rate(%)</h3>
-              <img src="../images/interest_rate(%).png" class="center" style="width:550px;height:450px;">
+              <img src="https://raw.githubusercontent.com/FIRE-Phoebe/Gas_Price_analysis/1st_segment_K/Resources/images/interest_rate(%25).png" class="center" style="width:550px;height:450px;">
             </div>
           </div>
           <div class="col-md-12">
