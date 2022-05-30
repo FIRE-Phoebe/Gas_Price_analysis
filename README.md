@@ -68,8 +68,12 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
 ### Performance of Models
 #### Model Pros and Cons
 - Multiple Linear Regression
+
+    <img src='' width=600  height=200>
 - Artificial neural networks
 
+     <img src='' width=600  height=200>
+     
 #### Variables summary:
 1. Original U.S gas dataset:
 <p align=center>
