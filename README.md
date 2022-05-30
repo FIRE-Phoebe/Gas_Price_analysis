@@ -153,7 +153,7 @@ MRM4:
 
 ## Web to show case
 - Main page:
-  <img src='Resources/images/webscrip.PNG' width=900 height=500>
+  <img src='Resources/images/webscrip.png' width=900 height=500>
   
 - Webscriping details:
   - MongoDB database(storage data)
