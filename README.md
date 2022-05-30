@@ -153,9 +153,13 @@ MRM4:
 
 ## Web to show case
 - Main page:
-  <img src=''>
+  <img src='Resources/images/webscrip.PNG' width=900 height=500>
   
-- Link:
+- Webscriping details:
+  - MongoDB database(storage data)
+  - Latest New of U.S Gas Price
+- Graphs and results from ML model
+
 
 ### Roles for Analysis
 - Contributors
