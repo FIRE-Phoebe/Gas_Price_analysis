@@ -5,7 +5,7 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
 ## Presentation
 - PowerPoint (Google Slides): https://docs.google.com/presentation/d/1XPCqnkOeaemkxZTu8BPxTlwjLJBWvVgrxnUrUHRo_xg/edit#slide=id.gc6f980f91_0_0
 - Topic: Gas Price Prediction and Analysis
-- Reason: After a pandemic, people are planning to going back to work. Drivers bemoan high gasoline prices. Besides, gas price rising impacts not only on daily life and travel, but also on various trades and industries.Through analyzing the historical natural gas datasets from U.S., we provide a platform for people explore more about the changes of natural gas price and use machine learning model to help them predict accurate gas price in the future.  
+- Reason: After the pandemic, people are planning on going back to office. Drivers bemoan high gasoline prices. Besides, increase in gas price impacts not only on our daily life and travel, but also on various trades and industries.Through analyzing the historical natural gas datasets from the U.S., we would like to provide our analysis by using machine learning models to help people predict gas price in the future.  
 
 - Description of the source of data
   - U.S Natural Gas Imports vs. Exports 
@@ -99,49 +99,52 @@ Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning M
 ANN MODEL Performance??
 
 ## Results
-According to our machine learning results, the Multiple Linear-Regression Model 1st attemp, we have the intercept is 2.81, the biggest factors to affect the all grades gas price are: Midgrade: 84.78%, Premium: -55.64% and Diesel: 43.81%. However, the gas types are significant from the OLS regression results that indicates their p-values are zero even the R-squared is 1.0. Obviously, the gas types and all grades gas are correlated. 
-MRM1:
-- intercept: 2.81
-- coefficients: 
+According to our 1st Multiple Linear-Regression Model attempt, we have the intercept of 2.81, the most impacting factors to affect the all grades gas price are: Midgrade: 84.78%, Premium: -55.64% and Diesel: 43.81%. However, the gas types are significant from the OLS regression results that indicates their p-values are zero and the R-squared is 1.0. Obviously, the gas types and all grades gas prices are much correlated. 
+
+-MRM1:
+  - intercept: 2.81
+  - coefficients: 
      
      <img src='Resources/images/mrm_1.PNG' width=900 height=50>
      
-Besides, after the Multiple Linear-Regression Model 2nd attemp, we have the intercept is 2.64, the biggest factors to affact the all grades gas price are: Midgrade: 32.98%, Premium: 23.61% and Diesel: 6.66%. Although we add addiional factors to our dataset, the biggest factors are still the same. In the OLS regression results, it also indecates the gas types are significant correlated with all grades gas price. Thus, the gas types are considered as dummy variables in our data.
-MRM2:
-- intercept: 2.64
-- coefficients: 
+After our 2nd Multiple Linear-Regression Model attempt, we have the intercept of 2.64, the most impacting factors to the all grades gas price are: Midgrade: 32.98%, Premium: 23.61% and Diesel: 6.66%. Although we added addiional factors to our dataset, the most impacting factors were still the same. In the OLS regression results, it also indicates that the gas types are significant but correlated with all grades gas price. Thus, the gas types are considered as dummy variables in our model.
+
+- MRM2:
+  - intercept: 2.64
+  - coefficients: 
     
     <img src='Resources/images/mrm_2.PNG' width=900 height=50>
     
-- Additional factors coefficients: 
+  - Additional factors coefficients: 
       <p align=center>
      <img src='Resources/images/mrm_2.0.PNG' width=450 height=50></p>
 
-In addition, we drop the dummies factors and have 3rd attemp. The intercept is 2.28 and the biggest factor to affact the all grades gas price is **Year**, which is -11.63. Also, Inflation: 88.52%, Stock to GDP: 83.53%, and Working Population: 55.56% are the biggest factors to affect the all grades gas price. From the OLS regression results, it indicates regular gas price and premium gas price are significant. 
-MRM3:
-- intercept: 2.28
-- coefficients: 
+In addition, we dropped the dummy factors and had 3rd attempt of multiple linear-regression model. The intercept is 2.28 and the most impacting factor to the all grades gas price is **Year**, which is -11.63. Also, Inflation: 88.52%, Stock to GDP: 83.53%, and Working Population: 55.56% are the most impacting factors to the all grades gas price. From the OLS regression results, it indicates regular gas price and premium gas price are significant. 
+
+- MRM3:
+  - intercept: 2.28
+  - coefficients: 
     
     <img src='Resources/images/mrm_3.PNG' width=900 height=50>
     
-- Additional factors coefficients: 
+  - Additional factors coefficients: 
     <p align=center>
      <img src='Resources/images/mrm_3.0.PNG' width=450 height=45></p>
      
-MRM4:
-- intercept: 2.81
-- coefficients: 
+- MRM4:
+  - intercept: 2.81
+  - coefficients: 
     
     <img src='Resources/images/mrm_4.PNG' width=900 height=50>
     
-- Additional Factors
+  - Additional Factors
 
     <p align=center>
      <img src='Resources/images/mrm_4.0.PNG' width=700 height=50></p>
      
-ANN Model:
-- MeanSquaredError: 1.6512
-- MeanAbsoluteError: 1.1464
+- ANN Model:
+  - MeanSquaredError: 1.6512
+  - MeanAbsoluteError: 1.1464
 
 ## Summary
 
