@@ -171,7 +171,7 @@ In addition, we dropped the dummy factors and had 3rd attempt of multiple linear
 - U.S._Natural_Gas_Underground_Storage_Volume.csv :
   - https://www.eia.gov/dnav/ng/hist/n5030us2m.htm
 
-## Web to show case
+## Webscriping
 - Main page:
   <img src='Resources/images/webscrip.png' width=900 height=500>
   
