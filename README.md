@@ -76,17 +76,7 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
      <img src='Resources/images/ann_pc.PNG' width=600  height=320>
      
 #### Variables summary:
-1. Original U.S gas dataset:
-<p align=center>
-    <img src='Resources/images/var_summary_table1.PNG' width=700 height=350 ></p>
-
-2. Four Additional Factors:
-<p align=center>
-  <img src='Resources/images/addition_var_summary_table.PNG' width=800 height=150></p>
-
-3. Consumers types:
-<p align=center>
-  <img src='Resources/images/consumer_var_summary_table.PNG' width=800 height=200></p>
+<img src='Resources/images/var_table.PNG' width=900, height=400>
   
 #### Measure Metrics:
 - R-squared Score: Residual squared score that efers to the coefficient of determination. It tells how well the unknoen samples will be predicted by model.(The best is 1.0, can be negative)
