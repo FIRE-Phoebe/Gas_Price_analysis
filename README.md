@@ -76,7 +76,8 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
      <img src='Resources/images/ann_pc.PNG' width=600  height=320>
      
 #### Variables summary:
-<img src='Resources/images/var_table.PNG' width=900, height=400>
+<p align=center>
+<img src='Resources/images/var_table.PNG' width=600, height=600></p>
   
 #### Measure Metrics:
 - R-squared Score: Residual squared score that efers to the coefficient of determination. It tells how well the unknoen samples will be predicted by model.(The best is 1.0, can be negative)
