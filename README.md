@@ -69,16 +69,17 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
 
 ### Performance of Models
 #### Model Pros and Cons
-- Multiple Linear Regression
+- Multiple Linear Regression vs. Artificial neural networks
 
-    <img src='Resources/images/ML_pc.PNG' width=600  height=300>
-- Artificial neural networks
+    <img src='Resources/images/ML_pc.PNG' width=300  height=150>          <img src='Resources/images/ann_pc.PNG' width=300  height=150>
 
-     <img src='Resources/images/ann_pc.PNG' width=600  height=320>
+- ARIMA Model
+
+<img src='Resources/images/arima_pc.PNG' width=400 height=180>
      
 #### Variables summary:
 <p align=center>
-<img src='Resources/images/var_table.PNG' width=600, height=600></p>
+<img src='Resources/images/var_table.PNG' width=500, height=500></p>
   
 #### Measure Metrics:
 - R-squared Score: Residual squared score that efers to the coefficient of determination. It tells how well the unknoen samples will be predicted by model.(The best is 1.0, can be negative)
