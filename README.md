@@ -67,6 +67,12 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
   - Factors: total 22 factors from our datasets.
   - Target: All_grades_gas_price
 
+### Time Series Model
+- Auto Regression Integrated Moving Average(ARIMA)
+  - Monthly all_grades_gas_price from 1993 to 2022.
+  - total 349month from the past to make predictions.
+
+
 ### Performance of Models
 #### Model Pros and Cons
 
