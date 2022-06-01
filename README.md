@@ -132,8 +132,8 @@ Moreover, while we add additional factors : consumers' types, we drop variable a
     
   - Additional Factors
 
-    <p align=center>
-     <img src='Resources/images/mrm_4.1new.PNG' width=700 height=50></p>
+    <p align = center>
+     <img src='Resources/images/mrm_4.1new.PNG' width=400 height=50></p>
      
 - ANN Model:
   - MeanSquaredError: 1.6512
