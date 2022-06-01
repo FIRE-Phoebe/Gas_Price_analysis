@@ -55,7 +55,8 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
     - target: all_grades_price
     
   - MRM4: Multiple Regression Model_4
-    - Add Consumer_types without dummies Factors: all_consumers, consumer_types(commercial_, elecric_, industrial_, residential_, vehicle_consumers)
+    - Add Consumer_types: consumer_types(commercial_, elecric_, industrial_, residential_, vehicle_consumers)
+    - Drop dummies: all_consumers, and gas_types_by_price 
     - target: all_grades_price
     
 ### Advance Machine Learning Model
@@ -121,17 +122,18 @@ In addition, we dropped the dummy factors and had 3rd attempt of multiple linear
   - Additional factors coefficients: 
     <p align=center>
      <img src='Resources/images/mrm_3.0.PNG' width=450 height=45></p>
-     
+
+Moreover, while we add additional factors : consumers' types, we drop variable all_consumersw which is perfectly correlated with other factors. The intercept is 2.81 and the most impacting factor to the all grades gas price is **Year**, which is 1.64. Also, consumption: 8.93, Electic consumers: -6.5, and Industrial consumers: -2.79 are the most impacting factors to the all grades gas price. From the OLS regression results, it indicates the residential consumers are significant with R-squared of 90.5%.
 - MRM4:
   - intercept: 2.81
   - coefficients: 
     
-    <img src='Resources/images/mrm_4.PNG' width=900 height=50>
+    <img src='Resources/images/mrm_4new.PNG' width=900 height=50>
     
   - Additional Factors
 
     <p align=center>
-     <img src='Resources/images/mrm_4.0.PNG' width=700 height=50></p>
+     <img src='Resources/images/mrm_4.1new.PNG' width=700 height=50></p>
      
 - ANN Model:
   - MeanSquaredError: 1.6512
