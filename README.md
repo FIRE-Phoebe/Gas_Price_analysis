@@ -65,7 +65,7 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
     - total 1,105 params
   - Factors: total 22 factors from our datasets.
   - Target: All_grades_gas_price
-  - 
+
 ### Performance of Models
 #### Model Pros and Cons
 - Multiple Linear Regression
