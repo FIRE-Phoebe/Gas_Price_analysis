@@ -69,13 +69,8 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
 
 ### Performance of Models
 #### Model Pros and Cons
-- Multiple Linear Regression vs. Artificial neural networks
 
-    <img src='Resources/images/ML_pc.PNG' width=300  height=150>          <img src='Resources/images/ann_pc.PNG' width=300  height=150>
-
-- ARIMA Model
-
-    <img src='Resources/images/arima_pc.PNG' width=400 height=180>
+<img src='Resources/images/pro_con.PNG' width=700 height=600>
      
 #### Variables summary:
 <p align=center>
