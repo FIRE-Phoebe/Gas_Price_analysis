@@ -75,11 +75,11 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
 ### Performance of Models
 #### Model Pros and Cons
 
-<img src='Resources/images/pro_con.PNG' width=700 height=600>
+<img src='Resources/images/pro_con.PNG' width=700 height=500>
      
 #### Variables summary:
-<p align=center>
-<img src='Resources/images/var_table.PNG' width=500, height=500></p>
+
+  <img src='Resources/images/var_table.PNG' width=550, height=550>
   
 #### Measure Metrics:
 - R-squared Score: Residual squared score that efers to the coefficient of determination. It tells how well the unknoen samples will be predicted by model.(The best is 1.0, can be negative)
@@ -100,7 +100,9 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
 - MRM2: intercept: 2.64
 - MRM3: intercept: 2.28     
 - MRM4: intercept: 2.81
-  <img src='Resources/images/general_coef.PNG' width=800 height=400>
+
+
+  <img src='Resources/images/general_coef.PNG' width=800 height=300>
   
 According to our 1st Multiple Linear-Regression Model attempt, we have the intercept of 2.81, the most impacting factors to affect the all grades gas price are: Midgrade: 84.78%, Premium: -55.64% and Diesel: 43.81%. However, the gas types are significant from the OLS regression results that indicates their p-values are zero and the R-squared is 1.0. Obviously, the gas types and all grades gas prices are much correlated.
 
