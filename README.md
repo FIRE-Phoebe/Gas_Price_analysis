@@ -87,7 +87,7 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
 - MAE*: Median of all the errors in the given dataset. (it's robust to outliers)
 - EVS: Explained variance score; measures how well out model can account for the variation in the dataset. (1.0 indicatesthat model is perfect.)
 
-    <img src='Resources/images/Model_evaluation.PNG' width=700 height=150>
+    <img src='Resources/images/model_evaluation.PNG' width=700 height=150>
 ANN MODEL Performance??
 
 ## Results
