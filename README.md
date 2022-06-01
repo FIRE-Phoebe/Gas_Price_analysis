@@ -75,7 +75,7 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
 
 - ARIMA Model
 
-<img src='Resources/images/arima_pc.PNG' width=400 height=180>
+    <img src='Resources/images/arima_pc.PNG' width=400 height=180>
      
 #### Variables summary:
 <p align=center>
@@ -88,10 +88,16 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
 - MAE*: Median of all the errors in the given dataset. (it's robust to outliers)
 - EVS: Explained variance score; measures how well out model can account for the variation in the dataset. (1.0 indicatesthat model is perfect.)
 
+#### Results
     <img src='Resources/images/model_evaluation.PNG' width=700 height=150>
-ANN MODEL Performance??
+    
+- ANN Model:
+  - MeanSquaredError: 1.6512
+  - MeanAbsoluteError: 1.1464
 
-## Results
+- ARIMA Model:
+    <img src='Resources/images/arima_summary.PNG'width=700 height=500>
+  
 According to our 1st Multiple Linear-Regression Model attempt, we have the intercept of 2.81, the most impacting factors to affect the all grades gas price are: Midgrade: 84.78%, Premium: -55.64% and Diesel: 43.81%. However, the gas types are significant from the OLS regression results that indicates their p-values are zero and the R-squared is 1.0. Obviously, the gas types and all grades gas prices are much correlated. 
 
 - MRM1:
@@ -134,9 +140,7 @@ Moreover, while we add additional factors : consumers' types, we drop variable a
     <p align = center>
      <img src='Resources/images/mrm_4.1new.PNG' width=400 height=50></p>
      
-- ANN Model:
-  - MeanSquaredError: 1.6512
-  - MeanAbsoluteError: 1.1464
+
 
 ## Summary
 
