@@ -123,7 +123,7 @@ In addition, we dropped the dummy factors and had 3rd attempt of multiple linear
     <p align=center>
      <img src='Resources/images/mrm_3.0.PNG' width=450 height=45></p>
 
-Moreover, while we add additional factors : consumers' types, we drop variable all_consumersw which is perfectly correlated with other factors. The intercept is 2.81 and the most impacting factors are the total consumption: 8.93, Electic consumers: -6.5, and Industrial consumers: -2.79 that correlated with the all grades gas price. Also, the OLS regression results indicate the p-value of residential consumers are significant. 
+Moreover, while we add additional factors : consumers' types, we drop variable all_consumers which is perfectly correlated with other factors. The intercept is 2.81 and the most impacting factors are the total consumption: 8.93, Electic consumers: -6.5, and Industrial consumers: -2.79 that correlated with the all grades gas price. Also, the OLS regression results indicate the p-value of residential consumers are significant. 
 - MRM4:
   - intercept: 2.81
   - coefficients: 
