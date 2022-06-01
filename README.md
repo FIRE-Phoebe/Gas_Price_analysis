@@ -89,6 +89,8 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
 - EVS: Explained variance score; measures how well out model can account for the variation in the dataset. (1.0 indicatesthat model is perfect.)
 
 #### Results
+
+
     <img src='Resources/images/model_evaluation.PNG' width=700 height=150>
     
 - ANN Model:
@@ -96,6 +98,8 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
   - MeanAbsoluteError: 1.1464
 
 - ARIMA Model:
+
+
     <img src='Resources/images/arima_summary.PNG'width=700 height=500>
   
 According to our 1st Multiple Linear-Regression Model attempt, we have the intercept of 2.81, the most impacting factors to affect the all grades gas price are: Midgrade: 84.78%, Premium: -55.64% and Diesel: 43.81%. However, the gas types are significant from the OLS regression results that indicates their p-values are zero and the R-squared is 1.0. Obviously, the gas types and all grades gas prices are much correlated. 
