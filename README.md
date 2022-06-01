@@ -93,7 +93,7 @@ ANN MODEL Performance??
 ## Results
 According to our 1st Multiple Linear-Regression Model attempt, we have the intercept of 2.81, the most impacting factors to affect the all grades gas price are: Midgrade: 84.78%, Premium: -55.64% and Diesel: 43.81%. However, the gas types are significant from the OLS regression results that indicates their p-values are zero and the R-squared is 1.0. Obviously, the gas types and all grades gas prices are much correlated. 
 
--MRM1:
+- MRM1:
   - intercept: 2.81
   - coefficients: 
      
@@ -123,15 +123,13 @@ In addition, we dropped the dummy factors and had 3rd attempt of multiple linear
     <p align=center>
      <img src='Resources/images/mrm_3.0.PNG' width=450 height=45></p>
 
-Moreover, while we add additional factors : consumers' types, we drop variable all_consumersw which is perfectly correlated with other factors. The intercept is 2.81 and the most impacting factor to the all grades gas price is **Year**, which is 1.64. Also, consumption: 8.93, Electic consumers: -6.5, and Industrial consumers: -2.79 are the most impacting factors to the all grades gas price. From the OLS regression results, it indicates the residential consumers are significant with R-squared of 90.5%.
+Moreover, while we add additional factors : consumers' types, we drop variable all_consumersw which is perfectly correlated with other factors. The intercept is 2.81 and the most impacting factors are the total consumption: 8.93, Electic consumers: -6.5, and Industrial consumers: -2.79 that correlated with the all grades gas price. Also, the OLS regression results indicate the p-value of residential consumers are significant. 
 - MRM4:
   - intercept: 2.81
   - coefficients: 
-    
     <img src='Resources/images/mrm_4new.PNG' width=900 height=50>
-    
+  
   - Additional Factors
-
     <p align = center>
      <img src='Resources/images/mrm_4.1new.PNG' width=400 height=50></p>
      
