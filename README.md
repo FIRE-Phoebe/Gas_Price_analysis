@@ -72,7 +72,6 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
   - Monthly all_grades_gas_price from 1993 to 2022.
   - total 349month from the past to make predictions.
 
-
 ### Performance of Models
 #### Model Pros and Cons
 
@@ -89,7 +88,7 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
 - MAE*: Median of all the errors in the given dataset. (it's robust to outliers)
 - EVS: Explained variance score; measures how well out model can account for the variation in the dataset. (1.0 indicatesthat model is perfect.)
 
-#### Results
+## Results
 1. Model Evaluation: 
 
  <img src='Resources/images/model_evaluation.PNG' width=700 height=150>
