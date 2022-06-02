@@ -98,6 +98,8 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
   <img src='Resources/images/model_evaluation_new.PNG' width=700 height=200></p>
 
 2. Model intercepts and General Coefficients:   
+
+
    According to our 1st Multiple Linear-Regression Model attempt, the most impacting factors to affect the all grades gas price are: Midgrade: 84.78%, Premium: -55.64% and Diesel: 43.81%. However, the gas types are significant from the OLS regression results that indicate their p-values are zero and the R-squared is 1.0. Obviously, the gas types and all grades gas prices are correlated. On the 2nd attempt,  the most impacting factors to the all grades gas price are: Midgrade: 32.98%, Premium: 23.61% and Diesel: 6.66%. Although we added addiional factors to our dataset, the most impacting factors are still the same. In the OLS regression results, it also indicates that the gas types are significant but correlated with all grades gas price. Thus, the gas types are considered as dummy variables in our model.
    
   - MRM1: intercept: 2.81
