@@ -114,7 +114,8 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
 
 3. Determine the best Machine Learning Model
 We compared three types of machine learning models: Multiple Linear Regression, ANN, and ARIMA. The best result is the ARIMA model, which has the smallest errors such as MAE, MSE, MAE*, that could use to better understand the gas prices pattern. Using sample data to train and test the model, we obtains the expected result. The predicted gas prices trend is almost overlap with the actual gas prices. See the graph below:
-<img src='Resources/images/arima_1.PNG' width=400 height=400>
+<p align=center>
+<img src='Resources/images/arima_1.PNG' width=450 height=350></p>
 
 Since the ARIMA model results indicate all the lags we tested are significant with R-squared score of 92%, we conclude that the ARIMA model is our best fit to forecast the gas prices. 
 
