@@ -93,27 +93,30 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
 1. Model Evaluation: 
 
 
-   According to the model results, the ARIMA model has the highest R-squared, which indicates the model is best fit for our gasoline datasets. Comparing the mean absolute error, MRM2 has the lowest score. ARIMA has the lowest mean squared error and median absolute error. However, MRM2 has the better explained variance score. Based on the Multiple linear regression model, we have four attemps. MRM2 and MRM3 have better results, but it has trade off. The OLS Regression results show the factors in the models are not significant. 
+   According to the model results, the ARIMA model has the highest R-squared, which indicates the model is best fit for our gasoline datasets. Comparing the mean absolute error, MRM2 has the lowest score. ARIMA has the lowest mean squared error and median absolute error. However, MRM2 has the better explained variance score. Based on the Multiple linear regression model, we have four attemps. MRM2 and MRM3 have better results, but it has trade-off. The OLS Regression results show the factors in the models are not significant. Thus, we need to continue to try different parameters.
 <p align=center>
   <img src='Resources/images/model_evaluation_new.PNG' width=700 height=200></p>
 
 2. Model intercepts and General Coefficients:   
 
 
-   According to our 1st Multiple Linear-Regression Model attempt, the most impacting factors to affect the all grades gas price are: Midgrade: 84.78%, Premium: -55.64% and Diesel: 43.81%. However, the gas types are significant from the OLS regression results that indicate their p-values are zero and the R-squared is 1.0. Obviously, the gas types and all grades gas prices are correlated. On the 2nd attempt,  the most impacting factors to the all grades gas price are: Midgrade: 32.98%, Premium: 23.61% and Diesel: 6.66%. Although we added addiional factors to our dataset, the most impacting factors are still the same. In the OLS regression results, it also indicates that the gas types are significant but correlated with all grades gas price. Thus, the gas types are considered as dummy variables in our model.
-   
+   According to our 1st Multiple Linear-Regression Model attempt, the most impacting factors to affect the all grades gas price are: Midgrade: 84.78%, Premium: -55.64% and Diesel: 43.81%. However, the gas types are significant from the OLS regression results that indicate their p-values are zero and the R-squared is 1.0. Obviously, the gas types and all grades gas prices are correlated. On the 2nd attempt,  the most impacting factors to the all grades gas price are: Midgrade: 32.98%, Premium: 23.61% and Diesel: 6.66%. Although we added addiional factors to our dataset, the most impacting factors are still the same. In the OLS regression results, it also indicates that the gas types are significant but correlated with all grades gas price. Thus, the gas types are considered as dummy variables in our model. For more infomation, see the following:
+   <p align=center>
   - MRM1: intercept: 2.81
   - MRM2: intercept: 2.64
   - MRM3: intercept: 2.28     
   - MRM4: intercept: 2.81
 
-<p align=center>
+
   <img src='Resources/images/general_coef.PNG' width=800 height=300></p>
   
    In addition, we dropped the dummy factors and had 3rd attempt of multiple linear-regression model. The most impacting factor to the all grades gas priceS is **Year**, which is -11.63. Also, Inflation: 88.52%, Stock to GDP: 83.53%, and Working Population: 55.56% are the most impacting factors to the all grades gas price. From the OLS regression results, it indicates regular gas priceS and premium gas priceS are significant. Moreover, while we add additional factors : consumers' types, we drop variable all_consumers which is perfectly correlated with other factors. The most impacting factors are the total consumption: 8.93, Electic consumers: -6.5, and Industrial consumers: -2.79 that correlated with the all grades gas prices. Also, the OLS regression results indicate the p-value of residential consumers are significant. 
 
 3. Determine the best Machine Learning Model
+We compared three types of machine learning models: Multiple Linear Regression, ANN, and ARIMA. The best result is the ARIMA model, which has the smallest errors such as MAE, MSE, MAE*, that could use to better understand the gas prices pattern. Using sample data to train and test the model, we obtains the expected result. The predicted gas prices trend is almost overlap with the actual gas prices. See the graph below:
+<img src='Resources/images/arima_1.PNG' width=400 height=400>
 
+Since the ARIMA model results indicate all the lags we tested are significant with R-squared score of 92%, we conclude that the ARIMA model is our best fit to forecast the gas prices. 
 
 ## Summary
 
