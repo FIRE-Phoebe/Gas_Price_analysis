@@ -91,7 +91,7 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
 ## Results
 1. Model Evaluation: 
 
- <img src='Resources/images/model_evaluation_new.PNG' width=700 height=150>
+  <img src='Resources/images/model_evaluation_new.PNG' width=700 height=200>
 
 2. Model intercepts and General Coefficients:   
  
