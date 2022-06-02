@@ -39,9 +39,9 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
   - Which machine learning model can help us to predict the gas price.
   - Make a better decision on energy using and planning in the future.
 
-## Machine Learning Model Prediction
-### Supervised Learning 
-- Multiple Linear Regression(4 attemps with different factors)
+## Machine Learning Approaches
+### Model Designs 
+1. Multiple Linear Regression(4 attemps with different factors)
   - MRM1: Multiple Regression Model_1
     - Factors: year, production, consumption, import_price, export_price, total imports, total exports, gas_price by types(all_grades, regular, midgrade, premium, diesel), volume(storage).
     - target: all_grades_price
@@ -59,30 +59,29 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
     - Drop dummies: all_consumers, and gas_types_by_price 
     - target: all_grades_price
     
-### Advance Machine Learning Model
-- Artificial neural networks(ANN)
+2. Artificial neural networks(ANN)
   - Use Sequential class and Dense class. 
     - 42 neurons in hidden layers, 22 inputs in the model
     - total 1,105 params
   - Factors: total 22 factors from our datasets.
   - Target: All_grades_gas_price
 
-### Time Series Model
+3. Time Series Model
 - Auto Regression Integrated Moving Average(ARIMA)
   - Monthly all_grades_gas_price from 1993 to 2022.
   - total 349month from the past to make predictions
   - consider seasonality of the dataset
 
-### Performance of Models
+### Data Preparation and Description of Models
+#### Datasets summary:
+
+  <img src='Resources/images/var_table.PNG' width=550, height=550>
 #### Model Pros and Cons
 
 <img src='Resources/images/pro_con.PNG' width=700 height=500>
      
-#### Variables summary:
 
-  <img src='Resources/images/var_table.PNG' width=550, height=550>
-  
-#### Measure Metrics:
+#### Models Evaluation Metrics:
 - R-squared Score: Residual squared score that efers to the coefficient of determination. It tells how well the unknown samples will be predicted by model.(The best is 1.0, can be negative)
 - MAE: Mean absolute error; the average of absolute errors off all the data points in the given dataset.
 - MSE: Mean squared error; the average of the squares of the errors of all the data points in the given dataset.
@@ -90,15 +89,14 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
 - EVS: Explained variance score; measures how well out model can account for the variation in the dataset. (1.0 indicatesthat model is perfect.)
 
 ## Results
-1. Model Evaluation: 
+1. Models Evaluations: 
 
-
-   According to the model results, the ARIMA model has the highest R-squared, which indicates the model is best fit for our gasoline datasets. Comparing the mean absolute error, MRM2 has the lowest score. ARIMA has the lowest mean squared error and median absolute error. However, MRM2 has the better explained variance score. Based on the Multiple linear regression model, we have four attemps. MRM2 and MRM3 have better results, but it has trade-off. The OLS Regression results show the factors in the models are not significant. Thus, we need to continue to try different parameters.
+   Overall models we have applied, the ARIMA model has the highest R-squared score is 92%, which indicates this model is the best fit for our gasoline datasets. Comparing to the Linear Regression Models, ARIMA has the lowest mean squared error and median absolute error even though the mean absolute error for MRM2 has the lowest score and better explained variance score. Besides, we have four attemps on Linear Regression Models with different factors. Among those attemps, MRM2 and MRM3 have better results but there's trade-off. The OLS Regression results show the factors(not including dummies) for all attemps are not significant. 
+   
 <p align=center>
   <img src='Resources/images/model_evaluation_new.PNG' width=700 height=200></p>
 
 2. Model intercepts and General Coefficients:   
-
 
    According to our 1st Multiple Linear-Regression Model attempt, the most impacting factors to affect the all grades gas price are: Midgrade: 84.78%, Premium: -55.64% and Diesel: 43.81%. However, the gas types are significant from the OLS regression results that indicate their p-values are zero and the R-squared is 1.0. Obviously, the gas types and all grades gas prices are correlated. On the 2nd attempt,  the most impacting factors to the all grades gas price are: Midgrade: 32.98%, Premium: 23.61% and Diesel: 6.66%. Although we added addiional factors to our dataset, the most impacting factors are still the same. In the OLS regression results, it also indicates that the gas types are significant but correlated with all grades gas price. Thus, the gas types are considered as dummy variables in our model. For more infomation, see the following:
    <p align=center>
