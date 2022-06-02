@@ -1,6 +1,6 @@
 # Gas Price Analysis
 ## Overview of the Analysis
-Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model to explore the future Gas Prices in the U.S. We perform price forecasting and prediction to visualize our findings based on the gas consumption, supply, and gas types in the last two decades. We will provide a website for users to explore the future gas prices.
+Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model to explore the future Gas Prices in the U.S. We use the past data to perform prices forecasting. We evaluate different machine learning models to find the most accurate model for the gas prices prediction. We also provide a website for target audiences to explore the future gas prices.
 
 ## Presentation
 - PowerPoint (Google Slides): https://docs.google.com/presentation/d/1XPCqnkOeaemkxZTu8BPxTlwjLJBWvVgrxnUrUHRo_xg/edit#slide=id.gc6f980f91_0_0
@@ -70,7 +70,8 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
 ### Time Series Model
 - Auto Regression Integrated Moving Average(ARIMA)
   - Monthly all_grades_gas_price from 1993 to 2022.
-  - total 349month from the past to make predictions.
+  - total 349month from the past to make predictions
+  - consider seasonality of the dataset
 
 ### Performance of Models
 #### Model Pros and Cons
@@ -82,7 +83,7 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
   <img src='Resources/images/var_table.PNG' width=550, height=550>
   
 #### Measure Metrics:
-- R-squared Score: Residual squared score that efers to the coefficient of determination. It tells how well the unknoen samples will be predicted by model.(The best is 1.0, can be negative)
+- R-squared Score: Residual squared score that efers to the coefficient of determination. It tells how well the unknown samples will be predicted by model.(The best is 1.0, can be negative)
 - MAE: Mean absolute error; the average of absolute errors off all the data points in the given dataset.
 - MSE: Mean squared error; the average of the squares of the errors of all the data points in the given dataset.
 - MAE*: Median of all the errors in the given dataset. (it's robust to outliers)
@@ -90,12 +91,13 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
 
 ## Results
 1. Model Evaluation: 
-
-  <img src='Resources/images/model_evaluation_new.PNG' width=700 height=200>
+   According to the model results, the ARIMA model has the highest R-squared, which indicates the model is best fit for our gasoline datasets. Comparing the mean absolute error, MRM2 has the lowest score. ARIMA has the lowest mean squared error and median absolute error. However, MRM2 has the better explained variance score. Based on the Multiple linear regression model, we have four attemps. MRM2 and MRM3 have better results, but it has trade off. The OLS Regression results show the factors in the models are not significant. 
+<p align=center>
+  <img src='Resources/images/model_evaluation_new.PNG' width=700 height=200></p>
 
 2. Model intercepts and General Coefficients:   
- 
-
+   According to our 1st Multiple Linear-Regression Model attempt, the most impacting factors to affect the all grades gas price are: Midgrade: 84.78%, Premium: -55.64% and Diesel: 43.81%. However, the gas types are significant from the OLS regression results that indicate their p-values are zero and the R-squared is 1.0. Obviously, the gas types and all grades gas prices are correlated. On the 2nd attempt,  the most impacting factors to the all grades gas price are: Midgrade: 32.98%, Premium: 23.61% and Diesel: 6.66%. Although we added addiional factors to our dataset, the most impacting factors are still the same. In the OLS regression results, it also indicates that the gas types are significant but correlated with all grades gas price. Thus, the gas types are considered as dummy variables in our model.
+   
 - MRM1: intercept: 2.81
 - MRM2: intercept: 2.64
 - MRM3: intercept: 2.28     
@@ -104,14 +106,12 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
 
   <img src='Resources/images/general_coef.PNG' width=800 height=300>
   
-According to our 1st Multiple Linear-Regression Model attempt, we have the intercept of 2.81, the most impacting factors to affect the all grades gas price are: Midgrade: 84.78%, Premium: -55.64% and Diesel: 43.81%. However, the gas types are significant from the OLS regression results that indicates their p-values are zero and the R-squared is 1.0. Obviously, the gas types and all grades gas prices are much correlated.
 
-After our 2nd Multiple Linear-Regression Model attempt, we have the intercept of 2.64, the most impacting factors to the all grades gas price are: Midgrade: 32.98%, Premium: 23.61% and Diesel: 6.66%. Although we added addiional factors to our dataset, the most impacting factors were still the same. In the OLS regression results, it also indicates that the gas types are significant but correlated with all grades gas price. Thus, the gas types are considered as dummy variables in our model.
+    In addition, we dropped the dummy factors and had 3rd attempt of multiple linear-regression model. The most impacting factor to the all grades gas priceS is **Year**, which is -11.63. Also, Inflation: 88.52%, Stock to GDP: 83.53%, and Working Population: 55.56% are the most impacting factors to the all grades gas price. From the OLS regression results, it indicates regular gas priceS and premium gas priceS are significant. Moreover, while we add additional factors : consumers' types, we drop variable all_consumers which is perfectly correlated with other factors. The most impacting factors are the total consumption: 8.93, Electic consumers: -6.5, and Industrial consumers: -2.79 that correlated with the all grades gas prices. Also, the OLS regression results indicate the p-value of residential consumers are significant. 
 
-In addition, we dropped the dummy factors and had 3rd attempt of multiple linear-regression model. The intercept is 2.28 and the most impacting factor to the all grades gas price is **Year**, which is -11.63. Also, Inflation: 88.52%, Stock to GDP: 83.53%, and Working Population: 55.56% are the most impacting factors to the all grades gas price. From the OLS regression results, it indicates regular gas price and premium gas price are significant. 
+3. ANN Model
 
-Moreover, while we add additional factors : consumers' types, we drop variable all_consumers which is perfectly correlated with other factors. The intercept is 2.81 and the most impacting factors are the total consumption: 8.93, Electic consumers: -6.5, and Industrial consumers: -2.79 that correlated with the all grades gas price. Also, the OLS regression results indicate the p-value of residential consumers are significant. 
-     
+
 ## Summary
 
 
