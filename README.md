@@ -121,7 +121,7 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
 ## Summary
 Because of what's going on with gas price increase nowadays, we wanted to perform an analysis on Gas Price and try to forecast future gas prices by using Machine Learning Models. We found out that ARIMA model could describe our future gas prices the best. Based on the graph below, we can expect our future gas price to go down for the rest of the year.
 
-
+<img src='Resources/images/arima_prediction.PNG' width=300 height=150><img src='Resources/images/2022_gas_price.PNG' width=500 height=300>
 
 ## Resources
 - California_Regular_All_Formulations_Retail_Gasoline_Prices.csv :
