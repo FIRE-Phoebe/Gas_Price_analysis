@@ -156,7 +156,7 @@ Because of what's going on with gas price increase nowadays, we wanted to perfor
   <img src='Resources/images/website2.png' width=700 height=600></p>
   
   - MongoDB database(storage data)
-  - Latest New of U.S Gas Price
+  - Latest Gasoline Prices in 2022
   - Graphs and results from ML model
 
 
