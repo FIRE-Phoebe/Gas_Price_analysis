@@ -145,12 +145,15 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
 
 ## Webscriping
 - Main page:
-  <img src='Resources/images/webscrip.png' width=900 height=500>
+  <img src='Resources/images/website1.png' width=900 height=500>
   
 - Webscriping details:
+
+<img src='Resources/images/website2.png' width=900 height=500>
+  
   - MongoDB database(storage data)
   - Latest New of U.S Gas Price
-- Graphs and results from ML model
+  - Graphs and results from ML model
 
 
 ### Roles for Analysis
