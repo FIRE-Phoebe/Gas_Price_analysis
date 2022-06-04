@@ -1,6 +1,6 @@
 # Gas Price Analysis
 ## Overview of the Analysis
-Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model to explore the future Gas Prices in the U.S. We use the past data to perform prices forecasting. We evaluate different machine learning models to find the most accurate model for the gas prices prediction. We also provide a website for target audiences to explore the future gas prices.
+Our Gas Price Analysis uses Python, Web Scraping, and Machine Learning to explore the past Gas Prices in the U.S. and forecast future gas prices. We performed visualization from our findings based on the various factors that we thought could affect the future gas prices. Later, we would like to show you our website that we created.
 
 ## Presentation
 - PowerPoint (Google Slides): https://docs.google.com/presentation/d/1XPCqnkOeaemkxZTu8BPxTlwjLJBWvVgrxnUrUHRo_xg/edit#slide=id.gc6f980f91_0_0
@@ -34,10 +34,10 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
   <img src='Resources/images/ERD.png' width=800 height=400 >
 
 - Questions hope to answer with the data
-  - What is the average natural gas price now and future.
-  - How the natural gas price changed from the last decades.
-  - Which machine learning model can help us to predict the gas price.
-  - Make a better decision on energy using and planning in the future.
+  - What is the average natural gas price now and in the future?
+  - How did the natural gas price change from the last decade?
+  - Which machine learning model can help us predict the gas price?
+ 
 
 ## Machine Learning Approaches
 ### Model Designs 
@@ -91,7 +91,7 @@ Gas Price Analysis project use Python, Web Scraping, and Machine Learning Model 
 ## Results
 1. Models Evaluations: 
 
-   Overall models we have applied, the ARIMA model has the highest R-squared score is 92%, which indicates this model is the best fit for our gasoline datasets. Comparing to the Linear Regression Models, ARIMA has the lowest mean squared error and median absolute error even though the mean absolute error for MRM2 has the lowest score and better explained variance score. Besides, we have four attemps on Linear Regression Models with different factors. Among those attemps, MRM2 and MRM3 have better results but there's trade-off. The OLS Regression results show the factors(not including dummies) for all attemps are not significant. 
+   Overall models we have applied, the ARIMA model has the highest R-squared score of 92%, which indicates this model is the best fit for our gasoline datasets. Comparing to the Linear Regression Models, ARIMA has the lowest mean squared error and median absolute error even though the mean absolute error for MRM2 has the lowest score and better explained variance score. Besides, we have four attemps on Linear Regression Models with different factors. Among those attemps, MRM2 and MRM3 have better results but there's trade-off. The OLS Regression results show the factors(not including dummies) for all attemps are not significant. 
    
 <p align=center>
   <img src='Resources/images/model_evaluation_new.PNG' width=700 height=200></p>
