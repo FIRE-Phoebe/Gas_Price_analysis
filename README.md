@@ -82,7 +82,7 @@ Our Gas Price Analysis uses Python, Web Scraping, and Machine Learning to explor
      
 
 #### Models Evaluation Metrics:
-- R-squared Score: Residual squared score that efers to the coefficient of determination. It tells how well the unknown samples will be predicted by model.(The best is 1.0, can be negative)
+- R-squared Score: Residual squared score that refers to the coefficient of determination. It tells how well the unknown samples will be predicted by model.(The best is 1.0, can be negative)
 - MAE: Mean absolute error; the average of absolute errors off all the data points in the given dataset.
 - MSE: Mean squared error; the average of the squares of the errors of all the data points in the given dataset.
 - MAE*: Median of all the errors in the given dataset. (it's robust to outliers)
