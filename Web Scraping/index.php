@@ -35,12 +35,12 @@
       <div style="background-color:grey;" class="jumbotron text-center">
         <h1 style="color: white;">Gas Price Analysis</h1>
         <!-- Add a button to activate scraping script -->
-        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+        <!-- <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p> -->
         <!-- Add a button to activate scraping script -->
         <p class="lead" style="font-weight:bold">by: THE TWO GASSY GIRLS</p>
         <hr class="my-4">
         <!-- <h style="color:white">LinkedIn Profile : </h> -->
-          <img src="https://image.similarpng.com/very-thumbnail/2020/07/Linkedin-logo-on-transparent-Background-PNG-.png" style="width:40px;height:40px;">
+        <img src="https://image.similarpng.com/very-thumbnail/2020/07/Linkedin-logo-on-transparent-Background-PNG-.png" style="width:40px;height:40px;">
           <a class="btn btn-Dark" href="https://www.linkedin.com/in/kimberly-kang-35450b75?trk=profile-badge" style="font-size:120%;color:white">Kimberly Kang</a>
           <a class="btn btn-Dark" href="https://www.linkedin.com/in/phoebemiao/" style="font-size:120%;color:white">Phoebe Miao</a>
           <br></br>
@@ -49,30 +49,25 @@
           <img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/backhand-index-pointing-right_1f449.png" style="width:40px;height:40px;">
           <a class="btn btn-Dark" href="https://www.youtube.com/watch?v=uE14fkmyN1U" style="color:white">Our Presentation in Youtube!</a>
         <br></br>
-        <img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/backhand-index-pointing-right_1f449.png" style="width:40px;height:40px;">
-        <a class="btn btn-Dark" href="https://gas-price-analysis.herokuapp.com/" style="font-size:120%;color:white">OUR WEBSITE!! PLZ CHECKOUT!!</a>
-        <br></br>
           <p2 style="font-size:100%;color: white;">Python, SQL, Tableau, Web Scraping, and Machine Learning</p2>
-
-
       </div>
 
       <!-- Add section for gas News -->
-      <div class="row" id="gas-news">
+      <!-- <div class="row" id="gas-news">
         <div class="col-md-12">
           <div class="media">
             <div class="media-body">
               <div class="page-header">
-                <h2 style="color:white;font-weight:bold; text-align: center">Latest Gas Price News</h2>
+                <h2 style="color:white;font-weight:bold; text-align: center">Latest Gas Price News</h2> -->
 
-              </div>
-              <h4 class="media-heading" style="color:white; text-align: center">{{ gas.news_title }}</h4>
+              <!-- </div> -->
+              <!-- <h4 class="media-heading" style="color:white; text-align: center">{{ gas.news_title }}</h4>
               <p style="color:white; text-align: center">{{ gas.news_paragraph }}</p>
               <p style="color:white; text-align: center">{{ gas.news_link }}</p> -->
-            </div>
+            <!-- </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Section for Real Time Gas price table from gasbuddy.com -->
       <!-- <div class="row" id="gas_news">
@@ -320,7 +315,6 @@
           <center><img src="https://raw.githubusercontent.com/FIRE-Phoebe/Gas_Price_analysis/main/Resources/images/2022_gas_price.PNG" style="width:700px;height:300px;"></center>
           </div>
 
-
     
       <div class="col-md-12">
         <div class="row">
@@ -339,35 +333,35 @@
         </style>
           <p1 style="color:white">gas_prices_by_type.csv</p1>
           <ul>
-            <li><a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_m.htm">https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_m.htm</a></li>
+            <li style="color:white"><a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_m.htm">https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_m.htm</a></li>
           </ul>
           <p1 style="color:white">Price_of_U.S._Natural_Gas_Exports.csv</p1>
           <ul>
-            <li><a href="https://www.eia.gov/dnav/ng/hist/n9130us3m.htm">https://www.eia.gov/dnav/ng/hist/n9130us3m.htm</a></li>
+            <li style="color:white"><a href="https://www.eia.gov/dnav/ng/hist/n9130us3m.htm">https://www.eia.gov/dnav/ng/hist/n9130us3m.htm</a></li>
           </ul>
           <p1 style="color:white">Price_of_U.S._Natural_Gas_Imports.csv</p1>
           <ul>
-            <li><a href="https://www.eia.gov/dnav/ng/hist/n9100us3m.htm">https://www.eia.gov/dnav/ng/hist/n9100us3m.htm</a></li>
+            <li style="color:white"><a href="https://www.eia.gov/dnav/ng/hist/n9100us3m.htm">https://www.eia.gov/dnav/ng/hist/n9100us3m.htm</a></li>
           </ul> 
           <p1 style="color:white">U.S._Natural_Gas_Exports.csv</p1>
           <ul>      
-            <li><a href="https://www.eia.gov/dnav/ng/hist/n9130us2m.htm">https://www.eia.gov/dnav/ng/hist/n9130us2m.htm</a></li>
+            <li style="color:white"><a href="https://www.eia.gov/dnav/ng/hist/n9130us2m.htm">https://www.eia.gov/dnav/ng/hist/n9130us2m.htm</a></li>
           </ul> 
           <p1 style="color:white">U.S._Natural_Gas_Imports.csv</p1>
           <ul> 
-            <li><a href="https://www.eia.gov/dnav/ng/hist/n9100us2m.htm">https://www.eia.gov/dnav/ng/hist/n9100us2m.htm</a></li>
+            <li style="color:white"><a href="https://www.eia.gov/dnav/ng/hist/n9100us2m.htm">https://www.eia.gov/dnav/ng/hist/n9100us2m.htm</a></li>
           </ul>
           <p1 style="color:white">U.S._Natural_Gas_Marketed_Production.csv</p1>
           <ul> 
-            <li><a href="https://www.eia.gov/dnav/ng/hist/n9050us2m.htm">https://www.eia.gov/dnav/ng/hist/n9050us2m.htm</a></li>
+            <li style="color:white"><a href="https://www.eia.gov/dnav/ng/hist/n9050us2m.htm">https://www.eia.gov/dnav/ng/hist/n9050us2m.htm</a></li>
           </ul>
           <p1 style="color:white">U.S._Natural_Gas_Total_Consumption.csv</p1>
           <ul> 
-            <li><a href="https://www.eia.gov/dnav/ng/hist/n9140us2m.htm">https://www.eia.gov/dnav/ng/hist/n9140us2m.htm</a></li>
+            <li style="color:white"><a href="https://www.eia.gov/dnav/ng/hist/n9140us2m.htm">https://www.eia.gov/dnav/ng/hist/n9140us2m.htm</a></li>
           </ul>
           <p1 style="color:white">U.S._Natural_Gas_Underground_Storage_Volume.csv</p1>
           <ul> 
-            <li><a href="https://www.eia.gov/dnav/ng/hist/n5030us2m.htm">https://www.eia.gov/dnav/ng/hist/n5030us2m.htm</a></li>
+            <li style="color:white"><a href="https://www.eia.gov/dnav/ng/hist/n5030us2m.htm">https://www.eia.gov/dnav/ng/hist/n5030us2m.htm</a></li>
           </ul>
 
           </div>
