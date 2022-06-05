@@ -1,8 +1,12 @@
 # Gas Price Analysis
 ## Overview of the Analysis
+Gas Price Analysis project use Python, ETL, Web Scraping, and Machine Learning Model to explore the future Gas Price in the U.S . We perform price forecasting and prediction to visualize our findings based on the gas consumption, supply, and gas types in the last two decades. Our goal is to provide users to predict the future gas price in U.S. by interacting with different Machine Learning Model.
 
+<<<<<<< HEAD
 Gas Price Analysis project use Python, ETL, Web Scaping, and Machine Learning Model to explore the future Gas Price in the U.S . We perform price forcasting and prediction to visualize our findings based on the gas consumption, supply, and gas types in the last two decades. Our goal is to provide users to predict the future gas price in U.S. by interacting with different Machine Learning Model.
 
+=======
+>>>>>>> ace799475fdf28573828e3ea197d02b120c56eb7
 ## Presentation
 - PowerPoint (Google Slides): https://docs.google.com/presentation/d/1XPCqnkOeaemkxZTu8BPxTlwjLJBWvVgrxnUrUHRo_xg/edit#slide=id.gc6f980f91_0_0
 - Topic: Gas Price Prediction and Analysis
@@ -23,10 +27,26 @@ Gas Price Analysis project use Python, ETL, Web Scaping, and Machine Learning Mo
     - Premium All Formulations Retail Gasoline Prices
     - No 2 Diesel Retail Prices
   - California Regular All_Formulations Retail Price
+<<<<<<< HEAD
 
 - ERD:
 
 
+=======
+  - U.S Infaltion Rate
+  - U.S Stock to GDP
+  - U.S Working Population
+  - U.S Interest Rate
+  - U.S Natural Gas Deliver to Consumers (types of consumers)
+    - Commercial
+    - Electric Power
+    - Industrial
+    - Residential
+    - Vehicle_Fuel
+  
+- ERD:
+
+>>>>>>> ace799475fdf28573828e3ea197d02b120c56eb7
   <img src='Resources/images/ERD.png' width=800 height=400 >
 
 - Questions hope to answer with the data
@@ -37,6 +57,7 @@ Gas Price Analysis project use Python, ETL, Web Scaping, and Machine Learning Mo
 
 ## Machine Learning Model Prediction
 ### Supervised Learning 
+<<<<<<< HEAD
 - Logistic Regression (algorithm)
 - Support Vector Machine(SVM)
 - Random Forests Classifier
@@ -46,8 +67,91 @@ Gas Price Analysis project use Python, ETL, Web Scaping, and Machine Learning Mo
 Analyze the output data(regression, or classification, or clustering)
 
 
+=======
+- Multiple Linear Regression(4 attemps with different factors)
+  - MRM1: Multiple Regression Model_1
+    - Factors: year, production, consumption, import_price, export_price, total imports, total exports, gas_price by types(all_grades, regular, midgrade, premium, diesel), volume(storage).
+    - target: all_grades_price
+
+  - MRM2: Multiple Regression Model_2
+    - Add additional Factors: inflation, stock_to_GDP, working_population, interest_rate.
+    - target: all_grades_price
+        
+  - MRM3: Multiple Regression Model_3
+    - Drop Dummies Factors: gas_price by types(all_grades, regular, midgrade, premium, diesel)
+    - target: all_grades_price
+    
+  - MRM4: Multiple Regression Model_4
+    - Add Consumer_types without dummies Factors: all_consumers, consumer_types(commercial_, elecric_, industrial_, residential_, vehicle_consumers)
+    - target: all_grades_price
+    
+### Advance Machine Learning Model
+- Artificial neural networks(ANN)
+
+### Performance of Models
+#### Model Pros and Cons
+- Multiple Linear Regression
+- Artificial neural networks
+
+#### Variables summary:
+1. Original U.S gas dataset:
+<p align=center>
+    <img src='Resources/images/var_summary_table1.PNG' width=700 height=350 ></p>
+
+2. Four Additional Factors:
+<p align=center>
+  <img src='Resources/images/addition_var_summary_table.PNG' width=800 height=150></p>
+
+3. Consumers types:
+<p align=center>
+  <img src='Resources/images/consumer_var_summary_table.PNG' width=800 height=200></p>
+  
+#### Measure Metrics:
+- R-squared Score: Residual squared score that efers to the coefficient of determination. It tells how well the unknoen samples will be predicted by model.(The best is 1.0, can be negative)
+- MAE: Mean absolute error; the average of absolute errors off all the data points in the given dataset.
+- MSE: Mean squared error; the average of the squares of the errors of all the data points in the given dataset.
+- MAE*: Median of all the errors in the given dataset. (it's robust to outliers)
+- EVS: Explained variance score; measures how well out model can account for the variation in the dataset. (1.0 indicatesthat model is perfect.)
+
+    <img src='Resources/images/Model_evaluation.PNG' width=700 height=150>
+>>>>>>> ace799475fdf28573828e3ea197d02b120c56eb7
 
 ## Results
+MRM1:
+- intercept: 2.81
+- coefficients: 
+     
+     <img src='Resources/images/mrm_1.PNG' width=900 height=50>
+MRM2:
+- intercept: 2.64
+- coefficients: 
+    
+    <img src='Resources/images/mrm_2.PNG' width=900 height=50>
+    
+- Additional factors coefficients: 
+      <p align=center>
+     <img src='Resources/images/mrm_2.0.PNG' width=450 height=50></p>
+MRM3:
+- intercept: 2.28
+- coefficients: 
+    
+    <img src='Resources/images/mrm_3.PNG' width=900 height=50>
+    
+- Additional factors coefficients: 
+    <p align=center>
+     <img src='Resources/images/mrm_3.0.PNG' width=450 height=45></p>
+     
+MRM4:
+- intercept: 2.81
+- coefficients: 
+    
+    <img src='Resources/images/mrm_4.PNG' width=900 height=50>
+    
+- Additional Factors
+
+    <p align=center>
+     <img src='Resources/images/mrm_4.0.PNG' width=700 height=50></p>
+    
 
 ## Summary
 
@@ -70,6 +174,7 @@ Analyze the output data(regression, or classification, or clustering)
   - https://www.eia.gov/dnav/ng/hist/n9140us2m.htm
 - U.S._Natural_Gas_Underground_Storage_Volume.csv :
   - https://www.eia.gov/dnav/ng/hist/n5030us2m.htm
+<<<<<<< HEAD
 
 
 ### Roles for Analysis
@@ -77,3 +182,16 @@ Analyze the output data(regression, or classification, or clustering)
   - Phoebe J.Miao: responsible for repository, design machine learning model and create a diagram explains ML model within the project scope. Data preprocessing and cleaning. Decide analysis technologies to be used for each steps of the project.
   - Kimberly Kang: create a mockup of a database with a set of sample data ensure the dataset are sourced and able to load from database. Responsible for dataset updates, download, and ERDs to give a big picture of dataset. Decide analysis technologies to be used for each steps of the project.
 
+=======
+
+## Web to show case
+- Main page:
+  <img src=''>
+  
+- Link:
+
+### Roles for Analysis
+- Contributors
+  - Phoebe J.Miao: responsible for repository, design machine learning model and create a diagram explains ML model within the project scope. Data preprocessing and cleaning. Decide analysis technologies to be used for each steps of the project. Organize all regression results and summarize them in readme file. Add contents into the PowerPoint file.
+  - Kimberly Kang: create a mockup of a database with a set of sample data to ensure that the datasets are sourced and are able to be loaded from database. Responsible for dataset updates, download, and ERDs to give a big picture of dataset. Decide analysis technologies to be used for each step of the project. Build html, app.py, scraping.py, and Python coding for scraping latest Gas Price news articles. Preprare a PowerPoint structure.
+>>>>>>> ace799475fdf28573828e3ea197d02b120c56eb7

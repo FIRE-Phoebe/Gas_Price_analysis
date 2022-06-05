@@ -1,0 +1,47 @@
+US_Natural_Gas_Exports_Imports
+-
+Year int 
+Exports_Price_Per_Gallon float
+Imports_Price_Per_Gallon float
+Total_Imports_Mmcf int
+Total_Emports_Mmcf int
+
+
+US_Natural_Gas_Storage
+-
+Year int pk fk - US_Natural_Gas_Exports_Imports.Year
+Volum_Mmcf int
+
+US_Natural_Gas_Supply_Demands
+-
+Year int pk fk - US_Natural_Gas_Exports_Imports.Year
+Production_Mmcf int
+Comsumption_Mmcf int
+
+Gas_Price_by_type
+- 
+Year int pk fk - US_Natural_Gas_Exports_Imports.Year
+all_grade float
+regular float
+midgrade float
+premium float
+diesel float
+
+Four_More_Factors
+-
+Year int pk fk - US_Natural_Gas_Exports_Imports.Year
+inflation float
+stock_to_GDP float
+working_popuation float
+interest_rate float
+
+
+Consumer_Factors
+-
+Year int pk fk - US_Natural_Gas_Exports_Imports.Year
+all_comsumers(Mmcf) int
+commercial_consumers(Mmcf) int
+electric_consumers((Mmcf) int
+industrial_consumers((Mmcf) int
+residential_consumers(Mmcf) int
+vehicle_consumers(Mmcf) int
