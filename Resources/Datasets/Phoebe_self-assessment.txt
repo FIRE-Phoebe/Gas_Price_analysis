@@ -1,0 +1,10 @@
+Self-Assessment
+I was responsible for repository, cooperate with team member to conduct data preprocessing and cleaning. Model design and perform machine learning models’ analysis including create a diagram explains ML models’ pros and cons, description of datasets, and model evaluation.  Find the best Machine Learning model to make prediction. Decide analysis technologies to be used for each step of the project. Organize all regression results and summarize them in readme file. Schedule daily zoom meeting with teammate and peer reviews. Presentation record and finalize in Google Slides. The greatest personal challenge over the course of the project is to determine the best model to forecast the gas prices. We discuss about the Multiple Linear Regression model and try many attempts to test the model. However, I didn’t get the results as we expected. I overcome the challenge by keep learning new models and trying time series data to test out. Finally, I did find the best model to make our prediction. 
+
+Team Assessment
+Daily project peer review and tasks assign. We coordinate the time to have a one hour meeting every day so we could communicate and have a problem to resolve in time. However, we have different opinions during peer review for using new machine learning model to present findings. Because of time constraints, we must ensure each step of the model analysis is within the project scope. In the end, we did complete the tasks with our collaboration. Teamwork and time management are very important.
+
+Summary of Project
+Gas Price Prediction and Analysis
+
+After the pandemic, gasoline prices impact not only on our daily life and travel, but also on various trades and industries. Through analyzing the historical natural gas datasets from the U.S., we finalized ARIMA machine learning model to analysis the gas prices and forecast the future gas prices. Based on the result, we can expect our future gas prices to go down for the rest of the year.
