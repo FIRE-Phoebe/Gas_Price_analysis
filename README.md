@@ -7,7 +7,7 @@ Our Gas Price Analysis uses Python, Web Scraping, and Machine Learning to explor
 - Video Link: https://youtu.be/uE14fkmyN1U
 - Our website: https://gas-price-analysis.herokuapp.com/
 - Topic: Gas Price Prediction and Analysis
-- Reason: After the pandemic, people are planning on going back to office. Drivers bemoan high gasoline prices. Besides, increase in gas price impacts not only on our daily life and travel, but also on various trades and industries.Through analyzing the historical natural gas datasets from the U.S., we would like to provide our analysis by using machine learning models to help people predict gas price in the future.  
+- Reason: After the pandemic, people are planning to go back to the office. Drivers bemoan high gasoline prices. Besides, an increase in gas price impacts not only on our daily life and travel, but also on various trades and industries. Through analyzing the historical natural gas datasets from the U.S., we would like to provide our analysis by using machine learning models to show our prediction on future gas prices.  
 
 - Description of the source of data
   - U.S Natural Gas Imports vs. Exports 
@@ -114,14 +114,14 @@ Our Gas Price Analysis uses Python, Web Scraping, and Machine Learning to explor
 
 3. Determine the best Machine Learning Model
 
-    We compared three types of machine learning models: Multiple Linear Regression, ANN, and ARIMA. The best result is the ARIMA model, which has the smallest errors such as MAE, MSE, MAE*, that could use to better understand the gas prices pattern. Using sample data to train and test the model, we obtains the expected result. The predicted gas prices trend is almost overlap with the actual gas prices. Since the ARIMA model results indicate all the lags we tested are significant with R-squared score of 92%, we conclude that the ARIMA model is our best fit to forecast future gas prices. As we could see the graph below:
+    We compared three types of machine learning models: Multiple Linear Regression, ANN, and ARIMA. The best result is the ARIMA model, which has the smallest errors such as MAE, MSE, MAE*, that could be used to understand the patterns in gas prices better. Using sample data to train and test the model, we obtained the expected result. The trend in the future gas prices almost overlap with the actual gas prices. Since the ARIMA model results indicate all the lags we tested are significant with R-squared score of 92%, we can conclude that the ARIMA model is our best fit to forecast the future gas prices. As we could see the graph below:
   
 <p align=center>
 <img src='Resources/images/arima_1.PNG' width=450 height=350></p>
 
 
 ## Summary
-Because of what's going on with gas price increase nowadays, we wanted to perform an analysis on Gas Price and try to forecast future gas prices by using Machine Learning Models. We found out that ARIMA model could describe our future gas prices the best. Based on the graph below, we can expect our future gas price to go down for the rest of the year.
+Because of what's going on with gas price increases nowadays, we wanted to perform an analysis on Gas Price and try to forecast future gas prices by using Machine Learning Models. We found out that ARIMA model would describe our future gas prices the best. Based on the graph below, we can expect our future gas prices to go down for the rest of the year.
 <p align=center>
 <img src='Resources/images/conclude.PNG' width=800 height=350></p> 
 
@@ -165,4 +165,4 @@ Because of what's going on with gas price increase nowadays, we wanted to perfor
 ### Roles for Analysis
 - Contributors
   - Phoebe J.Miao: responsible for repository, design machine learning model and create a diagram explains ML model within the project scope. Data preprocessing and cleaning. Decide analysis technologies to be used for each steps of the project. Organize all regression results and summarize them in readme file. Add contents into the PowerPoint file.
-  - Kimberly Kang: create a mockup of a database with a set of sample data to ensure that the datasets are sourced and are able to be loaded from database. Responsible for dataset updates, download, and ERDs to give a big picture of dataset. Decide analysis technologies to be used for each step of the project. Build html, app.py, scraping.py, and Python coding for scraping latest Gas Price news articles. Preprare a PowerPoint structure.
+  - Kimberly Kang: created a mockup of a database with a set of sample data to ensure that the datasets are sourced and are able to be loaded from database. Responsible for dataset updates, download, and ERDs to give a big picture of our dataset. Decided analysis technologies to be used for each step of the project. Built the html, app.py, scraping.py, and Python coding for web scraping of the latest Gas Price news articles. Preprared the PowerPoint structure.
