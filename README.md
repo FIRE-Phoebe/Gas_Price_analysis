@@ -164,5 +164,5 @@ Because of what's going on with gas price increases nowadays, we wanted to perfo
 
 ### Roles for Analysis
 - Contributors
-  - Phoebe J.Miao: responsible for repository, design machine learning model and create a diagram explains ML model within the project scope. Data preprocessing and cleaning. Decide analysis technologies to be used for each steps of the project. Organize all regression results and summarize them in readme file. Add contents into the PowerPoint file.
+  - Phoebe J.Miao: responsible for repository, design machine learning model and create a diagram explains ML model within the project scope. Perform Machine Learning Models analysis. Data preprocessing and cleaning. Decide analysis technologies to be used for each steps of the project. Organize all regression results and summarize them in readme file. Add contents into the PowerPoint file.
   - Kimberly Kang: created a mockup of a database with a set of sample data to ensure that the datasets are sourced and are able to be loaded from database. Responsible for dataset updates, download, and ERDs to give a big picture of our dataset. Decided analysis technologies to be used for each step of the project. Built the html, app.py, scraping.py, and Python coding for web scraping of the latest Gas Price news articles. Preprared the PowerPoint structure.
