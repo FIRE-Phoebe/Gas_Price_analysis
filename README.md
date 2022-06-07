@@ -71,7 +71,7 @@ Our Gas Price Analysis uses Python, Web Scraping, and Machine Learning to explor
 3. Time Series Model
 - Auto Regression Integrated Moving Average(ARIMA)
   - Monthly all_grades_gas_price from 1993 to 2022.
-  - total 349month from the past to make predictions
+  - total 349 months from the past to make predictions
   - consider seasonality of the dataset
 
 ### Data Preparation and Description of Models
